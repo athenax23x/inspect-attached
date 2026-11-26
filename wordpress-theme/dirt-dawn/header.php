@@ -48,7 +48,16 @@ $is_shop          = function_exists( 'is_shop' ) && ( is_shop() || is_product_ta
 		</button>
 
 		<a class="dnd-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<span class="dnd-brand__word"><?php esc_html_e( 'DIRT', 'dirt-dawn' ); ?> <span class="amp">&amp;</span> <?php esc_html_e( 'DAWN', 'dirt-dawn' ); ?></span>
+			<?php
+			$dnd_logo = dirt_dawn_header_logo();
+			if ( '' !== $dnd_logo ) {
+				echo $dnd_logo; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- dibangun oleh tema.
+			} else {
+				?>
+				<span class="dnd-brand__word"><?php esc_html_e( 'DIRT', 'dirt-dawn' ); ?> <span class="amp">&amp;</span> <?php esc_html_e( 'DAWN', 'dirt-dawn' ); ?></span>
+				<?php
+			}
+			?>
 			<span class="dnd-brand__tag"><?php esc_html_e( 'Built for the Outdoors', 'dirt-dawn' ); ?></span>
 		</a>
 

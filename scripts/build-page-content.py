@@ -15,6 +15,20 @@ STORY_SRC = ROOT / "wordpress-import" / "pages-source" / "story.html"
 OUT = ROOT / "wordpress-import" / "wp-install-pages.json"
 
 
+def clean_html(html: str) -> str:
+    """Buang hal yang tidak boleh ada di isi halaman WordPress.
+
+    - <style>: WordPress membuang tag ini untuk pengguna tanpa izin
+      unfiltered_html, dan teks CSS-nya lalu tampil sebagai isi halaman.
+      Gaya blok kebijakan/Story sekarang tinggal di style.css tema.
+    - komentar HTML pengarang: ikut tampil sebagai teks di dalam paragraf.
+    """
+    html = re.sub(r"<style\b.*?</style>", "", html, flags=re.S | re.I)
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+    html = re.sub(r"^\s+", "", html)
+    return html.strip() + "\n"
+
+
 def parse_wxr(text: str) -> list:
     pages = []
     for item in re.findall(r"<item>.*?</item>", text, re.S):
@@ -27,7 +41,7 @@ def parse_wxr(text: str) -> list:
             {
                 "slug": name.group(1).strip(),
                 "title": title.group(1).strip().replace("&amp;", "&"),
-                "content": content.group(1),
+                "content": clean_html(content.group(1)),
             }
         )
     return pages
@@ -40,7 +54,7 @@ def build() -> list:
         {
             "slug": "story",
             "title": "Our Story",
-            "content": STORY_SRC.read_text(encoding="utf-8"),
+            "content": clean_html( STORY_SRC.read_text(encoding="utf-8") ),
             # Tema lama mencari slug 'about'; simpan sebagai alias.
             "aliases": ["about"],
         }

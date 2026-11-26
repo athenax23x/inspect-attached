@@ -55,7 +55,15 @@ if ( ! is_array( $pages ) ) {
 	$fail( 'JSON halaman tidak valid.', 500 );
 }
 
+$mode = isset( $_GET['mode'] ) ? (string) $_GET['mode'] : 'create';
+
 require_once $dir . '/wp-load.php';
+
+// Isi halaman dikirim sebagai HTML mentah; KSES membuang <style>/<iframe> dan
+// atribut tertentu kalau tidak dimatikan, dan sisa teksnya tampil di halaman.
+if ( 'force' === $mode ) {
+	kses_remove_filters();
+}
 
 $created = array();
 $updated = array();
@@ -94,15 +102,20 @@ foreach ( $pages as $page ) {
 			$actions[] = 'published:' . $existing->post_status;
 		}
 
-		// Isi konten hanya kalau memang kosong; konten yang sudah ada tidak disentuh.
-		if ( '' !== $body && '' === trim( (string) $existing->post_content ) ) {
+		$current = (string) $existing->post_content;
+		$replace = ( 'force' === $mode )
+			? ( '' !== $body && trim( $current ) !== trim( $body ) )
+			: ( '' !== $body && '' === trim( $current ) );
+
+		// Isi konten hanya kalau kosong, atau kalau mode=force dan isinya berbeda.
+		if ( $replace ) {
 			wp_update_post(
 				array(
 					'ID'           => $existing->ID,
 					'post_content' => $body,
 				)
 			);
-			$actions[] = 'content_installed';
+			$actions[] = ( 'force' === $mode ) ? 'content_replaced' : 'content_installed';
 		}
 
 		if ( $actions ) {
@@ -141,14 +154,51 @@ if ( isset( $ids['home'] ) && (int) get_option( 'page_on_front' ) === 0 ) {
 	$home_changed = true;
 }
 
+// Site logo: pakai logo bawaan tema kalau Site Logo belum pernah diatur.
+$logo_result = 'already_set';
+if ( ! (int) get_theme_mod( 'custom_logo' ) ) {
+	$logo_src = get_template_directory() . '/assets/logo.svg';
+	if ( ! file_exists( $logo_src ) ) {
+		$logo_result = 'logo_missing';
+	} else {
+		$uploads = wp_upload_dir();
+		if ( ! empty( $uploads['error'] ) ) {
+			$logo_result = 'uploads_unavailable';
+		} else {
+			$logo_dest = trailingslashit( $uploads['path'] ) . 'dirt-dawn-logo.svg';
+			if ( ! copy( $logo_src, $logo_dest ) ) {
+				$logo_result = 'copy_failed';
+			} else {
+				$logo_id = wp_insert_attachment(
+					array(
+						'post_mime_type' => 'image/svg+xml',
+						'post_title'     => 'Dirt & Dawn logo',
+						'post_status'    => 'inherit',
+					),
+					$logo_dest
+				);
+				if ( is_wp_error( $logo_id ) || ! $logo_id ) {
+					$logo_result = 'attach_failed';
+				} else {
+					wp_update_attachment_metadata( $logo_id, array( 'width' => 260, 'height' => 52 ) );
+					set_theme_mod( 'custom_logo', (int) $logo_id );
+					$logo_result = 'set:' . $logo_id;
+				}
+			}
+		}
+	}
+}
+
 echo wp_json_encode_plain(
 	array(
 		'ok'              => true,
+		'mode'            => $mode,
 		'created'         => $created,
 		'updated'         => $updated,
 		'skipped'         => $skipped,
 		'page_on_front'   => (int) get_option( 'page_on_front' ),
 		'homepage_change' => $home_changed,
+		'logo'            => $logo_result,
 		'permalink'       => (string) get_option( 'permalink_structure' ),
 	)
 );
