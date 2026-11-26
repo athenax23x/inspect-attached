@@ -156,10 +156,8 @@ add_action( 'after_setup_theme', 'dirt_dawn_setup' );
  * Styles and scripts. Fonts are bundled in assets/fonts (no CDN request).
  */
 function dirt_dawn_assets(): void {
-	$version = DIRT_DAWN_VERSION;
-
-	wp_enqueue_style( 'dirt-dawn', get_stylesheet_uri(), array(), $version );
-	wp_enqueue_script( 'dirt-dawn', get_theme_file_uri( 'assets/js/theme.js' ), array(), $version, true );
+	wp_enqueue_style( 'dirt-dawn', get_stylesheet_uri(), array(), dirt_dawn_asset_version( 'style.css' ) );
+	wp_enqueue_script( 'dirt-dawn', get_theme_file_uri( 'assets/js/theme.js' ), array(), dirt_dawn_asset_version( 'assets/js/theme.js' ), true );
 
 	wp_localize_script( 'dirt-dawn', 'dirtDawn', array(
 		'email'  => dirt_dawn_contact_email(),
@@ -171,6 +169,19 @@ function dirt_dawn_assets(): void {
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'dirt_dawn_assets' );
+
+/**
+ * Versi aset diambil dari waktu modifikasi berkas, bukan konstanta tema.
+ *
+ * Sebelumnya versi aset dipatok pada konstanta, jadi URL seperti
+ * `style.css?ver=2.0.0` tidak pernah berubah dan CDN/browser terus menyajikan
+ * berkas lama setelah CSS diperbarui. Dengan filemtime, setiap deploy otomatis
+ * membatalkan cache.
+ */
+function dirt_dawn_asset_version( string $relative ): string {
+	$path = get_theme_file_path( $relative );
+	return file_exists( $path ) ? (string) filemtime( $path ) : DIRT_DAWN_VERSION;
+}
 
 function dirt_dawn_preload_fonts(): void {
 	$fonts = array( 'fraunces-latin.woff2', 'archivo-latin.woff2' );
