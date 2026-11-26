@@ -621,6 +621,20 @@ ul.products li.product {
   text-align: left;
 }
 
+/* WooCommerce menambahkan clearfix `::before` dan `::after` pada ul.products.
+   Di dalam wadah grid, pseudo-elemen itu ikut menjadi item, sehingga ada satu
+   sel kosong di kolom pertama dan baris pertama tergeser satu kolom. Clearfix
+   tidak diperlukan di grid, jadi keduanya dimatikan. */
+.woocommerce ul.products::before,
+.woocommerce ul.products::after,
+.woocommerce-page ul.products::before,
+.woocommerce-page ul.products::after,
+ul.products::before,
+ul.products::after {
+  content: none;
+  display: none;
+}
+
 .dnd-card {
   display: flex;
   flex-direction: column;
