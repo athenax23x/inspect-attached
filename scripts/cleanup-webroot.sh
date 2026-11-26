@@ -5,15 +5,15 @@
 # terbaca publik. TIDAK PERNAH menghapus apa pun dan TIDAK menyentuh file inti
 # WordPress: hanya nama di daftar LEFTOVERS yang dipindah.
 #
-# Pakai: cleanup-webroot.sh <preview|apply>
+# Pakai: cleanup-webroot.sh <preview|apply|purge-preview|purge>
 #
 # Environment: FTP_HOST, FTP_USER, FTP_PASS, opsional FTP_PORT/FTP_TLS/FTP_ROOT.
 set -euo pipefail
 
 MODE="${1:-preview}"
 case "$MODE" in
-  preview|apply) ;;
-  *) echo "Pakai: cleanup-webroot.sh <preview|apply>" >&2; exit 2 ;;
+  preview|apply|purge-preview|purge) ;;
+  *) echo "Pakai: cleanup-webroot.sh <preview|apply|purge-preview|purge>" >&2; exit 2 ;;
 esac
 
 : "${FTP_HOST:?Set FTP_HOST dulu}"
@@ -75,6 +75,60 @@ printf '   %s\n' "${PRESENT[@]}"
 
 if [ "$MODE" = "preview" ]; then
   echo ">> Mode preview: tidak ada yang diubah."
+  exit 0
+fi
+
+# --- Mode purge: hapus sisa export yang tidak dipakai WordPress -------------
+# Daftar eksplisit; tidak ada nama inti WordPress di sini. Folder backup dari
+# mode apply juga dihapus karena isinya source repo yang sebelumnya bisa dibaca
+# publik (mis. /_static-export-backup/package.json).
+if [ "$MODE" = "purge" ] || [ "$MODE" = "purge-preview" ]; then
+  PURGE_FILES=(
+    _not-found.html _not-found.txt
+    account.html account.txt admin.html admin.txt
+    cancellation-policy.html cancellation-policy.txt
+    cart.html cart.txt checkout.html checkout.txt
+    contact.html contact.txt cookie-policy.html cookie-policy.txt
+    order.html order.txt payment-policy.html payment-policy.txt
+    privacy-policy.html privacy-policy.txt
+    returns-and-refunds.html returns-and-refunds.txt
+    shipping-and-delivery.html shipping-and-delivery.txt
+    story.html story.txt
+    terms-and-conditions.html terms-and-conditions.txt
+    warranty-policy.html warranty-policy.txt
+    wishlist.html wishlist.txt
+  )
+  PURGE_DIRS=( "_static-export-backup" )
+
+  echo ">> Akan dihapus:"
+  printf '   %s\n' "${PURGE_FILES[@]}"
+  printf '   %s/\n' "${PURGE_DIRS[@]}"
+
+  if [ "$MODE" = "purge-preview" ]; then
+    echo ">> Mode purge-preview: tidak ada yang dihapus."
+    exit 0
+  fi
+
+  {
+    echo "set net:timeout 25"
+    echo "set net:max-retries 3"
+    echo "set ssl:verify-certificate no"
+    echo "set cmd:fail-exit no"
+    if [ "$FTP_TLS" = "yes" ]; then
+      echo "set ftp:ssl-force yes"
+      echo "set ftp:ssl-protect-data yes"
+    fi
+    if [ -n "$FTP_ROOT" ]; then echo "cd '$FTP_ROOT'"; fi
+    for name in "${PURGE_FILES[@]}"; do
+      echo "rm -f '$name'"
+    done
+    for name in "${PURGE_DIRS[@]}"; do
+      echo "rm -rf '$name'"
+    done
+  } > "$TMP"
+
+  lftp -u "$FTP_USER,$FTP_PASS" -p "$FTP_PORT" "$FTP_HOST" < "$TMP"
+  echo ">> Purge selesai. Cek: /wp-admin/, /shop/, /story/, /contact/ harus 200."
   exit 0
 fi
 

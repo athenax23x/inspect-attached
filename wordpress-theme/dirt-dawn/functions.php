@@ -22,6 +22,101 @@ function dirt_dawn_contact_email(): string {
 	return (string) apply_filters( 'dirt_dawn_contact_email', 'dirtndawn@hotmail.com' );
 }
 
+/**
+ * Gelombang merek kartu pembayaran, ditulis sebagai SVG inline supaya
+ * warnanya asli tanpa permintaan berkas tambahan.
+ */
+function dirt_dawn_payment_card( string $brand ): string {
+	$common = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 36" width="56" height="36" focusable="false" aria-hidden="true">';
+
+	switch ( $brand ) {
+		case 'visa':
+			$label = 'Visa';
+			$body  = '<rect width="56" height="36" rx="4" fill="#ffffff"/>'
+				. '<text x="28" y="24" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" font-style="italic" letter-spacing="0.5" fill="#1a1f71">VISA</text>';
+			break;
+
+		case 'mastercard':
+			$label = 'Mastercard';
+			$body  = '<rect width="56" height="36" rx="4" fill="#ffffff"/>'
+				. '<circle cx="23" cy="18" r="9.5" fill="#eb001b"/>'
+				. '<circle cx="33" cy="18" r="9.5" fill="#f79e1b"/>'
+				. '<path d="M28 10.4a9.5 9.5 0 000 15.2 9.5 9.5 0 000-15.2z" fill="#ff5f00"/>';
+			break;
+
+		case 'amex':
+			$label = 'American Express';
+			$body  = '<rect width="56" height="36" rx="4" fill="#2e77bc"/>'
+				. '<text x="28" y="22" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#ffffff">AMEX</text>';
+			break;
+
+		case 'paypal':
+			$label = 'PayPal';
+			$body  = '<rect width="56" height="36" rx="4" fill="#ffffff"/>'
+				. '<text x="28" y="23" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" font-style="italic">'
+				. '<tspan fill="#003087">Pay</tspan><tspan fill="#009cde">Pal</tspan></text>';
+			break;
+
+		default:
+			return '';
+	}
+
+	return $common . $body . '</svg>';
+}
+
+/**
+ * Baris kartu pembayaran untuk footer.
+ */
+function dirt_dawn_payment_cards(): string {
+	$brands = (array) apply_filters( 'dirt_dawn_payment_brands', array( 'visa', 'mastercard', 'amex', 'paypal' ) );
+	$out    = '';
+	foreach ( $brands as $brand ) {
+		$card = dirt_dawn_payment_card( (string) $brand );
+		if ( '' === $card ) {
+			continue;
+		}
+		$out .= '<span class="dnd-pay__card">' . $card . '</span>';
+	}
+	return $out;
+}
+
+/**
+ * Logo merek di header: logo situs kalau diatur, kalau tidak pakai berkas
+ * bawaan tema, dan kalau itu pun tidak ada, wordmark teks.
+ */
+function dirt_dawn_header_logo(): string {
+	if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) {
+		$id = (int) get_theme_mod( 'custom_logo' );
+		return wp_get_attachment_image(
+			$id,
+			'full',
+			false,
+			array(
+				'class' => 'dnd-logo',
+				'alt'   => get_bloginfo( 'name' ),
+			)
+		);
+	}
+
+	$file = get_theme_file_path( 'assets/logo.svg' );
+	if ( file_exists( $file ) ) {
+		return sprintf(
+			'<img class="dnd-logo" src="%s" alt="%s" width="260" height="52" decoding="async">',
+			esc_url( get_theme_file_uri( 'assets/logo.svg' ) ),
+			esc_attr( get_bloginfo( 'name' ) )
+		);
+	}
+
+	return '';
+}
+
+/**
+ * Berkas logo bawaan, dipakai installer untuk mengisi Site Logo WordPress.
+ */
+function dirt_dawn_bundled_logo_path(): string {
+	return get_theme_file_path( 'assets/logo.svg' );
+}
+
 function dirt_dawn_setup(): void {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );

@@ -3,7 +3,7 @@
 # Jalankan installer halaman sekali pakai di server lalu bersihkan.
 #
 # Environment: FTP_HOST, FTP_USER, FTP_PASS, SITE_URL (mis. https://domain),
-# opsional FTP_PORT / FTP_TLS / FTP_ROOT.
+# opsional FTP_PORT / FTP_TLS / FTP_ROOT / MODE (create|force).
 set -euo pipefail
 
 : "${FTP_HOST:?Set FTP_HOST dulu}"
@@ -11,6 +11,7 @@ set -euo pipefail
 : "${FTP_PASS:?Set FTP_PASS dulu}"
 : "${SITE_URL:?Set SITE_URL dulu}"
 
+MODE="${MODE:-create}"
 FTP_PORT="${FTP_PORT:-21}"
 FTP_TLS="${FTP_TLS:-yes}"
 FTP_ROOT="${FTP_ROOT:-}"
@@ -70,7 +71,7 @@ echo ">> Upload installer + data halaman"
 lftp_run "$WORK/upload.lftp"
 
 echo ">> Jalankan installer"
-RESPONSE="$(curl -sS --max-time 120 "$SITE_URL/$REMOTE_PHP?token=$TOKEN" || true)"
+RESPONSE="$(curl -sS --max-time 120 "$SITE_URL/$REMOTE_PHP?token=$TOKEN&mode=$MODE" || true)"
 printf '%s\n' "$RESPONSE"
 
 echo ">> Bersihkan file installer dari server"
