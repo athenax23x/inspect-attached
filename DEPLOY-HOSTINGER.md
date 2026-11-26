@@ -113,6 +113,22 @@ wp-admin → **Appearance → Themes → Add New → Upload Theme** →
 `wordpress-theme/dirt-dawn-theme.zip` → Install → Activate. Isi produk/halaman
 mengikuti `wordpress-import/IMPORT-STEPS.md`.
 
+### Opsi D — Skrip FTP dari repo ini
+
+Deploy + perbaikan `public_html` sekali jalan dari terminal:
+
+```bash
+export FTP_HOST=... FTP_USER=... FTP_PASS=...
+scripts/deploy-theme-ftp.sh all      # rapikan public_html, lalu upload tema
+scripts/deploy-theme-ftp.sh theme    # hanya upload tema
+scripts/deploy-theme-ftp.sh repair   # hanya rapikan public_html
+```
+
+`repair` tidak menghapus apa pun: sisa export dipindah ke
+`_static-export-backup/` di dalam `public_html`, jadi masih bisa dikembalikan.
+Kalau akun FTP kamu berakar di home directory, set
+`FTP_ROOT=domains/DOMAIN/public_html`.
+
 ## Langkah 3 — Verifikasi
 
 - `https://DOMAIN-ANDA/wp-admin/` → halaman login muncul, bisa masuk.
