@@ -87,18 +87,25 @@ hanya file/folder inti yang hilang lewat File Manager. **Jangan timpa**
    tersentuh. Kalau koneksi FTPS ditolak, ubah `protocol: ftps` menjadi
    `protocol: ftp`.
 
-### Opsi B — Fitur Git bawaan Hostinger
+### Opsi B — Fitur Git bawaan Hostinger (tanpa kredensial FTP)
 
 Fitur ini men-deploy **seluruh isi branch** ke folder tujuan, jadi branch-nya
-harus berisi hanya tema (bukan seluruh repo):
+harus berisi hanya tema (bukan seluruh repo) — kalau tidak, `src/`,
+`package.json`, dan `nextjs-export/` ikut terpublikasi di `public_html`.
+
+Branch `deploy/wordpress-theme` sudah tersedia untuk ini. Isinya hanya
+`style.css`, template PHP, dan `assets/`, dan dijaga tetap sinkron oleh
+`.github/workflows/publish-theme-branch.yml` setiap kali tema di `master`
+berubah.
+
+hPanel → **Advanced → Git** → pilih repository ini, branch
+**`deploy/wordpress-theme`**, deploy directory **`wp-content/themes/dirt-dawn`**.
+
+Kalau perlu memperbarui branch itu secara manual (mis. workflow belum aktif):
 
 ```bash
 git subtree push --prefix=wordpress-theme/dirt-dawn origin deploy/wordpress-theme
 ```
-
-Lalu hPanel → **Advanced → Git** → pilih branch `deploy/wordpress-theme` dengan
-deploy directory `wp-content/themes/dirt-dawn`. Jalankan perintah di atas setiap
-kali tema berubah.
 
 ### Opsi C — Upload manual (tanpa Git)
 
