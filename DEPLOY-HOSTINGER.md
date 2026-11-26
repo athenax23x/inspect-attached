@@ -172,3 +172,13 @@ Kalau deployment Git tema dimatikan, upload `wordpress-theme/dirt-dawn-theme.zip
 lewat **Appearance → Themes → Add New → Upload Theme**. Zip itu dihasilkan dari
 folder tema di repo dengan `npm run theme:zip`, jadi isinya selalu sama dengan
 versi repo.
+
+## Catatan keamanan
+
+- `cleanup.php` sudah dihapus dari tema. Skrip itu bisa dipanggil siapa saja lewat
+  URL dan menghapus direktori di `public_html`; kuncinya tertulis di dalam berkas,
+  jadi ikut terbaca karena repo ini publik. Tugasnya (membersihkan sisa export
+  statis) sudah selesai dan penggantinya ada di `scripts/cleanup-webroot.sh`,
+  yang memerlukan kredensial FTP dan memindahkan berkas alih-alih menghapusnya.
+- Jangan pernah menaruh kunci, token, atau kata sandi di dalam berkas tema:
+  semuanya ikut ter-deploy dan, kalau repo publik, terbaca siapa pun.
