@@ -15,6 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FTP_SERVER: ${{ secrets.FTP_SERVER }}
+      # Default: akun FTP Hostinger di-jail ke public_html, jadi path relatif ini
+      # sudah benar. Kalau akun FTP kamu berakar di home directory, set repository
+      # variable FTP_SERVER_DIR = domains/<domain>/public_html/wp-content/themes/dirt-dawn/
+      FTP_SERVER_DIR: ${{ vars.FTP_SERVER_DIR || 'wp-content/themes/dirt-dawn/' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,7 +26,7 @@ jobs:
       - name: Cek kredensial FTP
         if: env.FTP_SERVER == ''
         run: |
-          echo "::warning::Secret FTP_SERVER belum diisi - deploy tema dilewati. Isi FTP_SERVER, FTP_USERNAME, FTP_PASSWORD di Settings > Secrets and variables > Actions."
+          echo "::warning::Secret FTP_SERVER belum diisi - deploy tema dilewati. Isi FTP_SERVER, FTP_USERNAME, FTP_PASSWORD di Settings > Secrets and variables > Actions, lalu jalankan ulang workflow ini."
 
       - name: Sync folder tema via FTP
         if: env.FTP_SERVER != ''
@@ -36,9 +40,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./wordpress-theme/dirt-dawn/
-          # Ganti example.com dengan domain kamu. Kalau akun FTP kamu langsung
-          # terbuka di dalam public_html, pakai: wp-content/themes/dirt-dawn/
-          server-dir: domains/example.com/public_html/wp-content/themes/dirt-dawn/
+          server-dir: ${{ env.FTP_SERVER_DIR }}
           exclude: |
             **/.DS_Store
             **/.git*

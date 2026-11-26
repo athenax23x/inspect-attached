@@ -77,9 +77,11 @@ hanya file/folder inti yang hilang lewat File Manager. **Jangan timpa**
 2. GitHub repo → **Settings → Secrets and variables → Actions → New repository
    secret**, buat tiga secret: `FTP_SERVER` (mis. `ftp.domainanda.com` atau IP
    hosting), `FTP_USERNAME`, `FTP_PASSWORD`.
-3. Edit `.github/workflows/deploy-wordpress-theme.yml`, ganti `example.com` pada
-   `server-dir` dengan domain kamu. Kalau akun FTP kamu langsung terbuka di dalam
-   `public_html`, pakai `wp-content/themes/dirt-dawn/`.
+3. Tidak perlu edit file apa pun: workflow memakai
+   `wp-content/themes/dirt-dawn/`, dan itu benar kalau akun FTP kamu di-jail ke
+   `public_html` (default Hostinger). Kalau akun FTP berakar di home directory,
+   buat repository **variable** `FTP_SERVER_DIR` =
+   `domains/DOMAIN-ANDA/public_html/wp-content/themes/dirt-dawn/`.
 4. Push ke `master` (atau jalankan workflow-nya manual dari tab **Actions**).
    Hanya isi `wordpress-theme/dirt-dawn/` yang di-upload — wp-admin tidak pernah
    tersentuh. Kalau koneksi FTPS ditolak, ubah `protocol: ftps` menjadi
