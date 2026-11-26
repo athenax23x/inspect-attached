@@ -1,0 +1,19 @@
+# Dipasang oleh scripts/deploy-theme-ftp.sh untuk memperbaiki 403 wp-admin.
+#
+# Penyebab aslinya: deploy lama menaruh "DirectoryIndex index.html" di public_html,
+# sehingga /wp-admin/ (yang hanya punya index.php) dianggap tanpa file index dan
+# dijawab 403 karena Options -Indexes. index.php didahulukan di bawah ini.
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# Kalau folder fisik sisa export masih ada, tetap arahkan ke WordPress.
+RewriteRule ^(shop|product|cart|checkout|account|order|wishlist|story|policies|admin|contact|terms-and-conditions|privacy-policy|shipping-and-delivery|returns-and-refunds|payment-policy|cancellation-policy|warranty-policy|cookie-policy)/ /index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
