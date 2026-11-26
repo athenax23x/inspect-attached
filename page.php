@@ -16,14 +16,21 @@ while ( have_posts() ) :
 	$parent_name = $parent_id ? get_the_title( $parent_id ) : '';
 	$eyebrow     = $parent_name ? $parent_name : __( 'Dirt and Dawn', 'dirt-dawn' );
 	$is_woo_page = function_exists( 'is_cart' ) && ( is_cart() || is_checkout() || is_account_page() );
+	// Halaman kebijakan dan Story membawa header sendiri di dalam isinya
+	// (`.dnd-legal-page` / `.dnd-story`), jadi header bawaan tidak dicetak lagi
+	// supaya judul tidak muncul dua kali.
+	$content     = (string) get_the_content();
+	$own_header  = false !== strpos( $content, 'dnd-legal-page' ) || false !== strpos( $content, 'dnd-story' );
 	?>
 	<article <?php post_class( 'dnd-page' ); ?>>
+		<?php if ( ! $own_header ) : ?>
 		<header class="dnd-page-head">
 			<div class="container-x dnd-page-head__inner">
 				<p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p>
 				<h1><?php the_title(); ?></h1>
 			</div>
 		</header>
+		<?php endif; ?>
 
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="container-x dnd-page-hero">
