@@ -31,3 +31,4 @@
 - prod-socks2.jpg: Photo by congerdesign on Pixabay (https://pixabay.com/photos/socks-wool-knit-yarn-hobby-warm-3981234/)
 - prod-rainpants2.jpg: Photo by Hermann on Pixabay (https://pixabay.com/photos/mountaineering-man-trail-path-455338/)
 - prod-rainpants3.jpg: Photo by Domokus on Pixabay (https://pixabay.com/photos/hike-shoes-hiking-boots-2423223/)
+- fuel-snacks.jpg: Photo by FuriousPhoenixAU on Pixabay (https://pixabay.com/photos/snack-legumes-nuts-energy-peanut-4607657/)

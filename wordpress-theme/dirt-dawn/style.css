@@ -1,0 +1,119 @@
+/*
+Theme Name: Dirt & Dawn
+Theme URI: https://dirtdawn.solutions
+Description: Dirt & Dawn premium outdoor running store theme. Find Your Ground. Chase Your Dawn. Built for WooCommerce.
+Author: Dirt and Dawn
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+Text Domain: dirt-dawn
+*/
+
+:root {
+  --bone: #f4f2ec;
+  --charcoal: #20211e;
+  --earth-dark: #5c5140;
+  --sand: #d8cebd;
+  --clay: #b4562f;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bone);
+  color: var(--charcoal);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--earth-dark); }
+h1, h2, h3, h4 { font-family: var(--serif); line-height: 1.2; font-weight: 600; }
+.wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+.eyebrow {
+  font-size: .6875rem; font-weight: 600; letter-spacing: .25em;
+  text-transform: uppercase; color: var(--earth-dark);
+}
+.btn {
+  display: inline-block; padding: .8rem 1.6rem; border-radius: 999px;
+  background: var(--charcoal); color: var(--bone) !important;
+  text-decoration: none; font-weight: 600; transition: opacity .15s ease;
+}
+.btn:hover { opacity: .85; }
+.btn--light { background: var(--sand); color: var(--charcoal) !important; }
+.btn--ghost { background: transparent; border: 1.5px solid var(--bone); color: var(--bone) !important; }
+
+/* Header */
+.dnd-header { background: var(--bone); border-bottom: 1px solid var(--sand); position: relative; z-index: 20; }
+.dnd-header__bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; max-width: 72rem; margin: 0 auto; min-height: 80px; }
+.dnd-brand { text-decoration: none; color: var(--charcoal); display: flex; flex-direction: column; line-height: 1.1; }
+.dnd-brand strong { font-family: var(--serif); font-size: 1.35rem; letter-spacing: .02em; white-space: nowrap; }
+.dnd-brand span { font-size: .6875rem; letter-spacing: .2em; text-transform: uppercase; color: var(--earth-dark); }
+.dnd-nav ul { list-style: none; display: flex; gap: 1.25rem; margin: 0; padding: 0; }
+.dnd-nav a { text-decoration: none; color: var(--charcoal); font-weight: 500; font-size: .95rem; }
+.dnd-nav a:hover { color: var(--earth-dark); }
+.dnd-header__actions { display: flex; align-items: center; gap: 1rem; }
+.dnd-header__actions a { text-decoration: none; color: var(--charcoal); font-weight: 600; font-size: .95rem; }
+.dnd-header__actions .count { background: var(--clay); color: var(--bone); border-radius: 999px; padding: 0 .45rem; font-size: .75rem; }
+@media (max-width: 860px) {
+  .dnd-header__bar { flex-wrap: wrap; min-height: 0; }
+  .dnd-nav { order: 3; width: 100%; }
+  .dnd-nav ul { flex-wrap: wrap; gap: .75rem 1rem; padding: .5rem 0; }
+}
+
+/* Hero */
+.dnd-hero { position: relative; min-height: 30rem; display: flex; align-items: flex-end; overflow: hidden; }
+.dnd-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.dnd-hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(32,33,30,.15) 0%, rgba(32,33,30,.75) 100%); }
+.dnd-hero__content { position: relative; max-width: 72rem; margin: 0 auto; width: 100%; padding: 4rem 1.25rem; color: var(--bone); }
+.dnd-hero__content .eyebrow { color: var(--sand); }
+.dnd-hero__content h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); margin: .5rem 0 1rem; max-width: 22ch; }
+.dnd-hero__cta { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+/* Sections */
+.dnd-section { padding: 3.5rem 0; }
+.dnd-section--sand { background: var(--sand); }
+.dnd-section__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.75rem; }
+.dnd-section__head h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin: 0; }
+.dnd-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1024px) { .dnd-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .dnd-grid { grid-template-columns: 1fr; } }
+.dnd-tile { position: relative; border-radius: 1rem; overflow: hidden; aspect-ratio: 4/5; display: block; text-decoration: none; }
+.dnd-tile img { width: 100%; height: 100%; object-fit: cover; }
+.dnd-tile__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(32,33,30,0) 35%, rgba(32,33,30,.8) 100%); }
+.dnd-tile__label { position: absolute; left: 1rem; right: 1rem; bottom: 1rem; color: var(--bone); }
+.dnd-tile__label h3 { margin: 0; font-size: 1.25rem; }
+.dnd-tile__label p { margin: .15rem 0 0; font-size: .85rem; opacity: .9; }
+
+/* Footer */
+.dnd-footer { background: var(--charcoal); color: var(--bone); margin-top: 3rem; }
+.dnd-footer a { color: var(--bone); text-decoration: none; }
+.dnd-footer a:hover { text-decoration: underline; }
+.dnd-footer__grid { display: grid; gap: 2rem; grid-template-columns: 2fr 1fr 1fr; max-width: 72rem; margin: 0 auto; padding: 3rem 1.25rem; }
+@media (max-width: 720px) { .dnd-footer__grid { grid-template-columns: 1fr; } }
+.dnd-footer h4 { font-family: var(--sans); font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: var(--sand); margin: 0 0 .75rem; }
+.dnd-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; font-size: .95rem; }
+.dnd-footer__bottom { border-top: 1px solid rgba(244,242,236,.15); padding: 1.25rem; text-align: center; font-size: .85rem; color: var(--sand); }
+.dnd-pay { display: flex; gap: .5rem; justify-content: center; margin-top: .75rem; font-size: .75rem; letter-spacing: .08em; color: var(--sand); }
+.dnd-pay span { border: 1px solid rgba(244,242,236,.3); border-radius: .3rem; padding: .15rem .5rem; }
+
+/* WooCommerce */
+.woocommerce ul.products li.product { background: #fff; border-radius: 1rem; overflow: hidden; text-align: left; }
+.woocommerce ul.products li.product img { border-radius: 0; }
+.woocommerce ul.products li.product .woocommerce-loop-product__title { font-family: var(--serif); font-size: 1.05rem; padding: .5rem 1rem 0; }
+.woocommerce ul.products li.product .price { padding: 0 1rem; color: var(--charcoal); font-weight: 600; }
+.woocommerce ul.products li.product .button { background: var(--charcoal); color: var(--bone); border-radius: 999px; }
+.woocommerce ul.products li.product .button:hover { opacity: .85; background: var(--charcoal); }
+.woocommerce div.product .product_title { font-family: var(--serif); font-size: 2rem; }
+.woocommerce span.onsale { background: var(--clay); }
+.woocommerce-message, .woocommerce-info { border-top-color: var(--clay); }
+.woocommerce-message::before, .woocommerce-info::before { color: var(--clay); }
+.woocommerce button.button, .woocommerce a.button, .woocommerce input.button,
+.woocommerce #respond input#submit {
+  background: var(--charcoal); color: var(--bone); border-radius: 999px; font-weight: 600;
+}
+.woocommerce button.button:hover, .woocommerce a.button:hover { background: var(--earth-dark); color: var(--bone); }
+.dnd-page-title { padding: 2.5rem 0 0; }
+.dnd-page-title h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.6rem); }

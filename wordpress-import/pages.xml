@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+  <title>Dirt and Dawn</title>
+  <link>https://dirtdawn.solutions</link>
+  <description>Dirt and Dawn — Find Your Ground. Chase Your Dawn.</description>
+  <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+  <language>en-US</language>
+  <wp:wxr_version>1.2</wp:wxr_version>
+<item>
+    <title>Terms &amp; Conditions</title>
+    <link>https://dirtdawn.solutions/terms-and-conditions/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=100</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Terms & Conditions. Paste into a WordPress page with slug: terms-and-conditions (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Terms &amp; Conditions</h1>
+<p>Last updated: November 26, 2026</p>
+<p>Welcome to Dirt Dawn ("we," "us," "our"). By accessing or shopping at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a> (the "Site"), you agree to these Terms &amp; Conditions. Please read them carefully.</p>
+
+<h2>1. Use of the Site</h2>
+<p>You may use the Site for lawful, personal, non-commercial purposes only. You agree not to misuse the Site, attempt to breach its security, scrape its content, or interfere with its operation.</p>
+
+<h2>2. Orders and Acceptance</h2>
+<p>Your order is an offer to buy. We accept it when we send an order confirmation email. We may decline or cancel an order at any time — for example, if an item is out of stock, an pricing error occurred, or fraud is suspected. If we cancel a paid order, we refund the full amount to your original payment method.</p>
+
+<h2>3. Pricing, Taxes and Payment</h2>
+<p>All prices are in U.S. dollars and are subject to change without notice. Sales tax is applied where required by law. Payment is taken at checkout; see our <a href="/payment-policy/">Payment Policy</a> for details.</p>
+
+<h2>4. Shipping and Delivery</h2>
+<p>Delivery timelines and charges are described in our <a href="/shipping-and-delivery/">Shipping &amp; Delivery Policy</a>. Risk of loss passes to you upon delivery to the carrier address you specified.</p>
+
+<h2>5. Returns and Refunds</h2>
+<p>Our <a href="/returns-and-refunds/">Returns &amp; Refunds Policy</a> explains when and how items may be returned or refunded.</p>
+
+<h2>6. Intellectual Property</h2>
+<p>All content on the Site — including the Dirt and Dawn name, logos, product designs, photography and text — is owned by Dirt Dawn and may not be copied or used without our written permission.</p>
+
+<h2>7. Product Information</h2>
+<p>We work hard to display products and colours accurately, but screens vary and we cannot guarantee that what you see matches the product exactly. Slight variations are normal.</p>
+
+<h2>8. Limitation of Liability</h2>
+<p>To the fullest extent permitted by law, Dirt Dawn is not liable for indirect, incidental or consequential damages arising from your use of the Site or products purchased through it. Our total liability for any claim is limited to the amount you paid for the order concerned.</p>
+
+<h2>9. Governing Law</h2>
+<p>These Terms are governed by the laws of the State of Maryland, United States, without regard to conflict-of-law rules.</p>
+
+<h2>10. Changes to These Terms</h2>
+<p>We may update these Terms from time to time. The version posted on this page applies to your use of the Site and any order placed after it is posted.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>100</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[terms-and-conditions]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Privacy Policy</title>
+    <link>https://dirtdawn.solutions/privacy-policy/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=101</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Privacy Policy. Paste into a WordPress page with slug: privacy-policy (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Privacy Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>Dirt Dawn ("we," "us") respects your privacy. This policy explains what personal information we collect at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>, why, and the choices you have.</p>
+
+<h2>1. Information We Collect</h2>
+<ul>
+<li><strong>Order information:</strong> name, shipping and billing address, email address, phone number, and order details when you make a purchase.</li>
+<li><strong>Payment information:</strong> handled by our payment processors; we never see or store your full card number.</li>
+<li><strong>Account information:</strong> email and password if you create an account.</li>
+<li><strong>Usage data:</strong> pages visited and basic device information, collected through cookies — see our <a href="/cookie-policy/">Cookie Policy</a>.</li>
+</ul>
+
+<h2>2. How We Use Your Information</h2>
+<p>We use your information to process and ship orders, provide customer support, send order updates, prevent fraud, improve the Site, and — only if you opt in — send you marketing email. You can unsubscribe at any time using the link in any email.</p>
+
+<h2>3. Sharing Your Information</h2>
+<p>We share information only with service providers who need it to run our business: payment processors, shipping carriers, email delivery, and hosting. We do not sell your personal information to anyone.</p>
+
+<h2>4. Data Retention</h2>
+<p>We keep order records as long as required for tax and accounting purposes, and other personal data only as long as needed for the purposes above.</p>
+
+<h2>5. Your Rights</h2>
+<p>You may request a copy of your personal information, ask us to correct it, or ask us to delete it, subject to legal record-keeping duties. Residents of US state privacy jurisdictions (for example California and Virginia) may exercise additional rights under applicable state law. Contact us at the address below to make a request.</p>
+
+<h2>6. Security</h2>
+<p>The Site is served over HTTPS and we apply industry-standard safeguards. No method of transmission or storage is perfectly secure, but we work to protect your data.</p>
+
+<h2>7. Children</h2>
+<p>The Site is not directed at children under 13, and we do not knowingly collect their personal information.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We post any updates on this page with a new "Last updated" date.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>101</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>1</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Shipping &amp; Delivery</title>
+    <link>https://dirtdawn.solutions/shipping-and-delivery/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=102</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Shipping & Delivery Policy. Paste into a WordPress page with slug: shipping-and-delivery (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Shipping &amp; Delivery Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>This policy explains how Dirt Dawn ships orders placed at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>.</p>
+
+<h2>1. Processing Time</h2>
+<p>Orders are prepared and handed to the carrier within <strong>1–2 business days</strong> (Monday–Friday, excluding U.S. federal holidays). Orders placed on weekends or holidays are processed the next business day.</p>
+
+<h2>2. Shipping Destinations and Rates</h2>
+<p>We currently ship within the United States. Shipping rates and any free-shipping threshold are shown at checkout before you pay.</p>
+
+<h2>3. Delivery Time</h2>
+<p>Delivery takes roughly <strong>3–7 business days</strong> after your order ships, depending on the carrier and destination. Busy periods and weather can cause delays; we appreciate your patience.</p>
+
+<h2>4. Tracking</h2>
+<p>You receive a tracking number by email as soon as your order ships. If tracking has not updated within 7 business days, contact us and we will look into it.</p>
+
+<h2>5. Address Errors</h2>
+<p>Please double-check your address at checkout. If a package is returned to us because of an incorrect or incomplete address, we can reship it at your cost. Contact us as soon as possible if you spot a mistake — we can usually correct it before the order ships.</p>
+
+<h2>6. Lost or Damaged Packages</h2>
+<p>If your package arrives damaged or goes missing, email us within 14 days of the delivery date (or of the last tracking update) with your order number and a photo if applicable, and we will make it right.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>102</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[shipping-and-delivery]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>2</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Returns &amp; Refunds</title>
+    <link>https://dirtdawn.solutions/returns-and-refunds/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=103</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Returns & Refunds Policy. Paste into a WordPress page with slug: returns-and-refunds (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Returns &amp; Refunds Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>If something is not right, we want to fix it. This policy explains how returns and refunds work at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>.</p>
+
+<h2>1. Return Window</h2>
+<p>You may return unworn, unwashed items with original tags within <strong>30 days of delivery</strong> for a refund to your original payment method.</p>
+
+<h2>2. How to Start a Return</h2>
+<ul>
+<li>Email <strong>dirtndawn@hotmail.com</strong> with your order number and the item(s) you want to return.</li>
+<li>We reply with return instructions and the return address.</li>
+<li>Ship the items back; we recommend a trackable service.</li>
+</ul>
+
+<h2>3. Refunds</h2>
+<p>Once your return arrives and passes inspection, we refund the item price (plus any applicable tax) to your original payment method within <strong>5–10 business days</strong>. Original shipping charges are non-refundable unless the return is our fault.</p>
+
+<h2>4. Defective or Wrong Items</h2>
+<p>If an item arrives damaged, defective or not the one you ordered, tell us within 14 days of delivery with a photo and your order number. We cover return shipping and offer a replacement or full refund.</p>
+
+<h2>5. Exclusions</h2>
+<p>Items marked "final sale" and gift cards cannot be returned unless defective.</p>
+
+<h2>6. Exchanges</h2>
+<p>For a different size or colour, return the original item and place a new order — that is the fastest way to get the size you want.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>103</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[returns-and-refunds]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>3</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Cancellation Policy</title>
+    <link>https://dirtdawn.solutions/cancellation-policy/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=104</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Cancellation Policy. Paste into a WordPress page with slug: cancellation-policy (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Cancellation Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>This policy explains when and how you can cancel an order placed at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>.</p>
+
+<h2>1. Cancelling Before Shipment</h2>
+<p>You may cancel an order for a full refund as long as it has <strong>not yet shipped</strong>. Email <strong>dirtndawn@hotmail.com</strong> as soon as possible with your order number and the subject line "Cancel order #..." — we process cancellations within 1 business day.</p>
+
+<h2>2. Cancelling After Shipment</h2>
+<p>Once an order has shipped we cannot stop the carrier. Refuse the delivery if you are present, or accept it and use our <a href="/returns-and-refunds/">Returns &amp; Refunds Policy</a> to send it back for a refund.</p>
+
+<h2>3. Cancellations by Us</h2>
+<p>We may cancel an order if an item is out of stock, the price was wrong, or the payment cannot be verified. You receive a full refund to the original payment method and an email explaining what happened.</p>
+
+<h2>4. Refund Timing</h2>
+<p>Approved cancellations are refunded within <strong>5–10 business days</strong>, depending on your bank or card issuer.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>104</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[cancellation-policy]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>4</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Payment Policy</title>
+    <link>https://dirtdawn.solutions/payment-policy/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=105</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Payment Policy. Paste into a WordPress page with slug: payment-policy (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Payment Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>This policy explains how payment works when you shop at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>.</p>
+
+<h2>1. Accepted Payment Methods</h2>
+<p>We accept major credit and debit cards: <strong>Visa, Mastercard and American Express</strong>. Available payment methods are shown at checkout and may vary by region.</p>
+
+<h2>2. When You Are Charged</h2>
+<p>Your card is authorised and charged when you place the order. If an item is unavailable and we cancel that part of your order, the corresponding amount is refunded to your original payment method.</p>
+
+<h2>3. Currency and Taxes</h2>
+<p>All charges are in U.S. dollars (USD). Sales tax is calculated at checkout based on the shipping address and applicable law.</p>
+
+<h2>4. Payment Security</h2>
+<p>Checkout is encrypted over HTTPS and processed by our payment provider. Dirt Dawn never sees or stores your full card number. Your card statement will show the charge as "Dirt Dawn" (or a close variant we display at checkout).</p>
+
+<h2>5. Failed or Declined Payments</h2>
+<p>If a payment is declined, no order is created and you are not charged. Check your card details and billing address, or try another card. Contact your bank if the problem continues.</p>
+
+<h2>6. Pricing Errors</h2>
+<p>If a product is listed at an incorrect price, we may cancel the affected order and refund you in full, even after a confirmation email was sent.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>105</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[payment-policy]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>5</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Warranty Policy</title>
+    <link>https://dirtdawn.solutions/warranty-policy/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=106</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Warranty Policy. Paste into a WordPress page with slug: warranty-policy (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Warranty Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>Dirt Dawn gear is built to last. This policy explains the limited warranty that covers products bought at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>.</p>
+
+<h2>1. One-Year Limited Warranty</h2>
+<p>Dirt Dawn warrants its products against defects in materials and workmanship for <strong>one (1) year</strong> from the date of delivery, when used for their intended purpose. If a product fails because of a manufacturing defect within that period, we repair or replace it — or, if it is no longer available, refund you.</p>
+
+<h2>2. What Is Not Covered</h2>
+<ul>
+<li>Normal wear and tear (outsoles, straps, fabric pilling, fading).</li>
+<li>Damage from misuse, improper washing, accidents or modification.</li>
+<li>Items bought from anyone other than Dirt Dawn or its authorised sellers.</li>
+</ul>
+
+<h2>3. Making a Warranty Claim</h2>
+<ul>
+<li>Email <strong>dirtndawn@hotmail.com</strong> with your order number, a description of the problem, and photos showing the defect.</li>
+<li>If the claim is approved, we explain the repair, replacement or refund and any next steps.</li>
+</ul>
+
+<h2>4. Your Legal Rights</h2>
+<p>This warranty gives you specific legal rights, and you may also have other rights that vary from state to state.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>106</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[warranty-policy]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>6</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Cookie Policy</title>
+    <link>https://dirtdawn.solutions/cookie-policy/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=107</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Cookie Policy. Paste into a WordPress page with slug: cookie-policy (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Legal</p>
+<h1>Cookie Policy</h1>
+<p>Last updated: November 26, 2026</p>
+<p>This Cookie Policy explains how Dirt Dawn uses cookies at <a href="https://dirtdawn.solutions">dirtdawn.solutions</a>.</p>
+
+<h2>1. What Are Cookies</h2>
+<p>Cookies are small text files a website stores on your device. We also use similar technologies such as local storage. They help the site work, remember your preferences and understand how it is used.</p>
+
+<h2>2. Cookies We Use</h2>
+<ul>
+<li><strong>Essential cookies</strong> — required for the cart, checkout and security. The site cannot function without them.</li>
+<li><strong>Preference cookies</strong> — remember choices such as language and region.</li>
+<li><strong>Analytics cookies</strong> — help us understand which pages are visited so we can improve the Site. Data is aggregated.</li>
+<li><strong>Session cookies</strong> — keep you signed in while you browse and expire when you close your browser.</li>
+</ul>
+
+<h2>3. Managing Cookies</h2>
+<p>You can block or delete cookies in your browser settings at any time. If you disable essential cookies, parts of the store — such as the cart and checkout — will not work.</p>
+
+<h2>4. Third-Party Cookies</h2>
+<p>Some embedded content or payment tools may set their own cookies. We keep third-party cookies to the minimum needed to run the store.</p>
+
+<h2>5. Changes to This Policy</h2>
+<p>We post any updates on this page with a new "Last updated" date.</p>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>107</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[cookie-policy]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>7</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+<item>
+    <title>Contact Us</title>
+    <link>https://dirtdawn.solutions/contact/</link>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">https://dirtdawn.solutions/?page_id=108</guid>
+    <description></description>
+    <content:encoded><![CDATA[<!-- DIRT AND DAWN — Contact & Customer Support. Paste into a WordPress page with slug: contact (use one Custom HTML block) -->
+<div class="dnd-legal-page">
+<style>
+.dnd-legal-page{--bone:#f4f2ec;--charcoal:#20211e;--earth-dark:#5c5140;--sand:#d8cebd;background:var(--bone);color:var(--charcoal);max-width:46rem;margin:0 auto;padding:3rem 1.25rem 4rem;font-size:1rem;line-height:1.7}
+.dnd-legal-page h1{font-family:Georgia,serif;font-size:2rem;line-height:1.2;margin:0 0 .5rem}
+.dnd-legal-page .dnd-eyebrow{font-size:.6875rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--earth-dark);margin:0 0 .75rem}
+.dnd-legal-page h2{font-family:Georgia,serif;font-size:1.25rem;margin:2rem 0 .5rem}
+.dnd-legal-page p,.dnd-legal-page li{margin:0 0 .75rem}
+.dnd-legal-page ul{padding-left:1.25rem}
+.dnd-legal-page a{color:var(--charcoal);text-decoration:underline;text-underline-offset:3px}
+.dnd-legal-page .dnd-bizcard{margin-top:2.5rem;padding:1.25rem 1.5rem;background:var(--sand);font-size:.875rem}
+.dnd-legal-page .dnd-bizcard strong{display:block;margin-bottom:.5rem}
+.dnd-legal-page .dnd-bizcard p{margin:0 0 .25rem}
+@media (min-width:640px){.dnd-legal-page{padding:4rem 1.5rem 5rem}.dnd-legal-page h1{font-size:2.5rem}}
+</style>
+<p class="dnd-eyebrow">Support</p>
+<h1>Contact &amp; Customer Support</h1>
+<p>Questions about an order, a return or your gear? We are here to help.</p>
+
+<h2>Email</h2>
+<p><a href="mailto:dirtndawn@hotmail.com">dirtndawn@hotmail.com</a> — the fastest way to reach us. Please include your order number (starts with "#") when you write about an order.</p>
+
+<h2>Response Time</h2>
+<p>We answer within <strong>1–2 business days</strong>, Monday through Friday (excluding U.S. federal holidays).</p>
+
+<h2>Shipping Address</h2>
+<p>Return and correspondence address: <strong>932 Owens RD, Oxon Hill, MD 20745, United States</strong>. Do not send a return without instructions first — see the <a href="/returns-and-refunds/">Returns &amp; Refunds Policy</a> to start one.</p>
+
+<h2>Common Questions</h2>
+<ul>
+<li><strong>Where is my order?</strong> Check the tracking link in your shipping email; if it has not moved in 7 business days, email us.</li>
+<li><strong>Can I change my address?</strong> Email us immediately — we can usually correct it before the order ships.</li>
+<li><strong>How do I cancel?</strong> See the <a href="/cancellation-policy/">Cancellation Policy</a>.</li>
+<li><strong>How do I return something?</strong> See the <a href="/returns-and-refunds/">Returns &amp; Refunds Policy</a>.</li>
+<li><strong>Is my gear covered?</strong> See the <a href="/warranty-policy/">Warranty Policy</a>.</li>
+</ul>
+
+<div class="dnd-bizcard">
+<strong>Business Information</strong>
+<p>Dirt Dawn</p>
+<p>932 Owens RD, Oxon Hill, MD 20745, United States</p>
+<p>Email: dirtndawn@hotmail.com</p>
+<p>Website: https://dirtdawn.solutions</p>
+</div>
+</div>
+]]></content:encoded>
+    <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+    <wp:post_id>108</wp:post_id>
+    <wp:post_date><![CDATA[2026-11-25 09:00:00]]></wp:post_date>
+    <wp:post_name><![CDATA[contact]]></wp:post_name>
+    <wp:status><![CDATA[publish]]></wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>8</wp:menu_order>
+    <wp:post_type><![CDATA[page]]></wp:post_type>
+  </item>
+</channel>
+</rss>
