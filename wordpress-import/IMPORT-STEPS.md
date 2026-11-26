@@ -3,6 +3,9 @@
 Everything below happens in wp-admin. No coding, no copy-paste of page content.
 Files: `dirt-dawn-theme.zip`, `products.csv`, `pages.xml` (this folder).
 
+> Deploying to Hostinger with Git instead of uploading the zip? See
+> `../DEPLOY-HOSTINGER.md`. This file is the manual-upload path.
+
 ## 1. Install the theme (1 min)
 1. wp-admin → **Appearance → Themes → Add New → Upload Theme**.
 2. Choose `dirt-dawn-theme.zip` → **Install Now** → **Activate**.
