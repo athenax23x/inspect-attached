@@ -1,11 +1,11 @@
 "use client";
 
-import { use } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useStore, fmt } from "@/lib/store";
 
-export default function OrderClient({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function OrderClient() {
+  const id = useSearchParams().get("id") ?? "";
   const { orders } = useStore();
   const order = orders.find((o) => o.id === id);
 

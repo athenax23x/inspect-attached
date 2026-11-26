@@ -88,7 +88,7 @@ export default function AccountPage() {
                     <li key={i}>{it.qty} × {it.name} <span className="text-charcoal/40">({it.size}, {it.color})</span></li>
                   ))}
                 </ul>
-                <Link href={`/order/${o.id}`} className="mt-3 inline-block text-xs uppercase tracking-[0.15em] text-earth hover:text-charcoal">Full details →</Link>
+                <Link href={`/order?id=${o.id}`} className="mt-3 inline-block text-xs uppercase tracking-[0.15em] text-earth hover:text-charcoal">Full details →</Link>
               </details>
             ))}
           </div>

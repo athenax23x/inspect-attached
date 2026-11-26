@@ -57,7 +57,7 @@ export default function CheckoutPage() {
     };
     placeOrder(order);
     clearCart();
-    router.push(`/order/${order.id}`);
+    router.push(`/order?id=${order.id}`);
   };
 
   if (lines.length === 0 && !placing) {
