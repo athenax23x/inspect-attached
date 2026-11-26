@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bone: #f4f2ec;
+  --color-charcoal: #20211e;
+  --color-earth: #82735f;
+  --color-forest: #34483a;
+  --color-sand: #d8cebd;
+  --color-sand-light: #e6dfd2;
+  --font-display: var(--font-display), ui-serif, Georgia, serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --header-h: 4rem;
+}
+
+html,
+body {
+  @apply bg-bone text-charcoal font-sans antialiased;
+  overflow-x: clip;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.container-x {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.btn,
+.btn-primary,
+.btn-outline,
+.btn-light {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-[0.15em] transition-colors duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-primary {
+  @apply bg-charcoal text-bone hover:bg-forest;
+}
+.btn-outline {
+  @apply border border-charcoal/30 text-charcoal hover:border-charcoal hover:bg-charcoal hover:text-bone;
+}
+.btn-light {
+  @apply bg-bone text-charcoal hover:bg-sand;
+}
+
+.input {
+  @apply w-full border border-charcoal/20 bg-white/60 px-4 py-3 text-sm outline-none placeholder:text-charcoal/40 focus:border-charcoal;
+}
+
+.label {
+  @apply block text-xs font-semibold uppercase tracking-[0.15em] text-charcoal/60;
+}
+
+.eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.25em] text-earth;
+}
