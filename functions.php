@@ -117,6 +117,23 @@ function dirt_dawn_bundled_logo_path(): string {
 	return get_theme_file_path( 'assets/logo.svg' );
 }
 
+/**
+ * Ikon tab (favicon) cadangan.
+ *
+ * WordPress hanya mencetak <link rel="icon"> kalau Site Icon diatur dan
+ * ukurannya bisa diresolusi. Kalau belum, tema memakai ikon bawaannya supaya
+ * tab browser tidak menampilkan ikon bawaan server.
+ */
+function dirt_dawn_site_icon_fallback(): void {
+	if ( get_site_icon_url( 512 ) ) {
+		return; // WordPress sudah menangani.
+	}
+	$icon = get_theme_file_uri( 'assets/icon-512.png' );
+	printf( '<link rel="icon" type="image/png" sizes="512x512" href="%s">' . "\n", esc_url( $icon ) );
+	printf( '<link rel="apple-touch-icon" href="%s">' . "\n", esc_url( $icon ) );
+}
+add_action( 'wp_head', 'dirt_dawn_site_icon_fallback', 20 );
+
 function dirt_dawn_setup(): void {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
