@@ -1379,14 +1379,19 @@ ul.products {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--s-2);
+  /* Baris sendiri di dasar footer supaya kartu tidak terhimpit kolom lain. */
+  flex-basis: 100%;
+  margin-top: var(--s-3);
 }
 .dnd-pay__label {
-  flex-basis: 100%;
+  margin-right: var(--s-2);
   font-size: var(--text-2xs);
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--bone-muted);
 }
+/* Footer bawah perlu boleh membungkus agar baris kartu dapat turun ke bawah. */
+.dnd-footer__bottom-inner { flex-wrap: wrap; }
 .dnd-pay__card {
   display: block;
   width: 3.5rem;
