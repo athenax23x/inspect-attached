@@ -12,8 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Static export output committed at the repo root for Hostinger:
-    "_next/**",
+    // Static export output (arkib deploy statis lama), bukan source:
+    "nextjs-export/**",
   ]),
 ]);
 

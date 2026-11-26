@@ -1,0 +1,47 @@
+name: Deploy WordPress theme to Hostinger
+
+# Kirim hanya folder tema ke public_html/wp-content/themes/dirt-dawn.
+# Tidak pernah menyentuh wp-admin, wp-includes, atau file inti WordPress lain.
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'wordpress-theme/dirt-dawn/**'
+      - '.github/workflows/deploy-wordpress-theme.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
+      # Default: akun FTP Hostinger di-jail ke public_html, jadi path relatif ini
+      # sudah benar. Kalau akun FTP kamu berakar di home directory, set repository
+      # variable FTP_SERVER_DIR = domains/<domain>/public_html/wp-content/themes/dirt-dawn/
+      FTP_SERVER_DIR: ${{ vars.FTP_SERVER_DIR || 'wp-content/themes/dirt-dawn/' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cek kredensial FTP
+        if: env.FTP_SERVER == ''
+        run: |
+          echo "::warning::Secret FTP_SERVER belum diisi - deploy tema dilewati. Isi FTP_SERVER, FTP_USERNAME, FTP_PASSWORD di Settings > Secrets and variables > Actions, lalu jalankan ulang workflow ini."
+
+      - name: Sync folder tema via FTP
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Hostinger: FTP 21 dengan FTPS (explicit TLS). Kalau server menolak
+          # FTPS, ganti jadi: protocol: ftp
+          protocol: ftps
+          port: 21
+          local-dir: ./wordpress-theme/dirt-dawn/
+          server-dir: ${{ env.FTP_SERVER_DIR }}
+          exclude: |
+            **/.DS_Store
+            **/.git*
+            **/.git*/**
