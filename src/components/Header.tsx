@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useStore } from "@/lib/store";
-import { CATEGORIES } from "@/lib/types";
 
 /* Shop menu: only links backed by real, non-empty categories.
    ("Shoes" has no products yet; "Hydration" and "Trail/Trekking" share the
@@ -35,7 +34,7 @@ const COLLECTIONS = [
 const UTILITY = "p-2 hover:text-earth transition-colors";
 
 export default function Header() {
-  const { cartCount, wishlist, user } = useStore();
+  const { cartCount, wishlist } = useStore();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [activePath, setActivePath] = useState("");
