@@ -600,9 +600,26 @@ ul.products {
   list-style: none;
 }
 @media (min-width: 1000px) {
-  .dnd-card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .dnd-card-grid,
+  ul.products { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 .dnd-card-grid--home { margin-top: var(--s-7); }
+
+/* WooCommerce memberi `li.product` float dan lebar persen (sekitar 22%) untuk
+   tata letak float-nya sendiri. Di dalam grid, lebar itu membuat kartu menyusut
+   jadi seperlima kolom dan barisnya terlihat acak — inilah daftar produk yang
+   berantakan. Netralkan supaya ukuran ditentukan sel grid, bukan persen. */
+.woocommerce ul.products li.product,
+.woocommerce ul.products li.product.first,
+.woocommerce ul.products li.product.last,
+.woocommerce-page ul.products li.product,
+ul.products li.product {
+  float: none;
+  width: auto;
+  clear: none;
+  margin: 0;
+  text-align: left;
+}
 
 .dnd-card {
   display: flex;

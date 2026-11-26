@@ -189,6 +189,43 @@ if ( ! (int) get_theme_mod( 'custom_logo' ) ) {
 	}
 }
 
+// Site icon (favicon): pakai ikon bawaan tema kalau belum diatur.
+$icon_result = 'already_set';
+if ( ! (int) get_option( 'site_icon' ) ) {
+	$icon_src = get_template_directory() . '/assets/icon-512.png';
+	if ( ! file_exists( $icon_src ) ) {
+		$icon_result = 'icon_missing';
+	} else {
+		$uploads = wp_upload_dir();
+		if ( ! empty( $uploads['error'] ) ) {
+			$icon_result = 'uploads_unavailable';
+		} else {
+			$icon_dest = trailingslashit( $uploads['path'] ) . 'dirt-dawn-icon.png';
+			if ( ! copy( $icon_src, $icon_dest ) ) {
+				$icon_result = 'copy_failed';
+			} else {
+				require_once ABSPATH . 'wp-admin/includes/image.php';
+				$icon_id = wp_insert_attachment(
+					array(
+						'post_mime_type' => 'image/png',
+						'post_title'     => 'Dirt & Dawn icon',
+						'post_status'    => 'inherit',
+					),
+					$icon_dest
+				);
+				if ( is_wp_error( $icon_id ) || ! $icon_id ) {
+					$icon_result = 'attach_failed';
+				} else {
+					wp_update_attachment_metadata( $icon_id, wp_generate_attachment_metadata( $icon_id, $icon_dest ) );
+					update_option( 'site_icon', (int) $icon_id );
+					// get_site_icon_url() harus bisa meresolusi ukuran yang diminta.
+					$icon_result = get_site_icon_url( 512 ) ? 'set:' . $icon_id : 'set_but_unresolved:' . $icon_id;
+				}
+			}
+		}
+	}
+}
+
 echo wp_json_encode_plain(
 	array(
 		'ok'              => true,
@@ -199,6 +236,7 @@ echo wp_json_encode_plain(
 		'page_on_front'   => (int) get_option( 'page_on_front' ),
 		'homepage_change' => $home_changed,
 		'logo'            => $logo_result,
+		'site_icon'       => $icon_result,
 		'permalink'       => (string) get_option( 'permalink_structure' ),
 	)
 );
