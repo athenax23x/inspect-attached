@@ -3,7 +3,7 @@ import PolicyLayout from "../policy-page";
 
 export const metadata: Metadata = {
   title: "Refund & Returns Policy",
-  description: "How to return or exchange Dirt and Dawn gear and how refunds are paid.",
+  description: "Return eligibility, the return procedure, refunds and exchanges at Dirt and Dawn.",
 };
 
 export default function ReturnsPage() {
@@ -11,40 +11,63 @@ export default function ReturnsPage() {
     <PolicyLayout
       eyebrow="Legal"
       title="Refund & Returns Policy"
-      updated="1 November 2026"
-      intro="Trail gear has to fit and it has to survive. If it does neither, send it back: you have 30 days from delivery on unworn items, and longer if a product fails."
+      updated="26 November 2026"
+      intro="Trail gear has to fit and it has to survive. If it does neither, we make it right — here is exactly how returns, refunds and exchanges work."
       sections={[
         {
-          heading: "30-day returns",
+          heading: "Return eligibility",
           body: [
-            "Return any unworn item with its tags within 30 days of delivery for a full refund. Start a return by emailing returns@dirtanddawn.com with your order number \u2014 we send a prepaid label for addresses across Indonesia.",
-            "Refunds go back to your original payment method within 7 business days of the parcel reaching us.",
+            "Gear bought directly from dirtdawn.solutions can be returned within 30 days of delivery for a refund or exchange.",
+          ],
+        },
+        {
+          heading: "Product condition",
+          body: [
+            "Items must be unworn and unwashed, with their tags attached. Try shoes indoors on a clean floor; try kit at home, not on the trail. Returns that fail this check are sent back with a note explaining why.",
+          ],
+        },
+        {
+          heading: "How to start a return",
+          body: [
+            "Email dirtndawn@hotmail.com with your order number and the items you are returning. We reply with the return instructions and the address to ship to.",
+          ],
+        },
+        {
+          heading: "Refund processing",
+          body: [
+            "Once your return is received and checked, we refund the item value to the original payment method. Original shipping costs are refunded only where the return results from our error.",
+            { pending: "the refund processing timeframe, to be confirmed by the business owner." },
           ],
         },
         {
           heading: "Exchanges",
           body: [
-            "Sizing exchanges are free, including the shipping both ways, once per order. Tell us the size you need and we ship it as soon as the return is scanned by the courier.",
+            "Need a different size? Ask for an exchange instead of a refund and we hold the replacement while your return is in transit, then ship it the day the return clears.",
           ],
         },
         {
-          heading: "Exceptions",
+          heading: "Non-returnable items",
           body: [
-            "For hygiene reasons we cannot accept returns of headwear (caps, beanies, headbands) or eyewear lenses that have been unsealed. Socks and base layers can only be returned unworn in original packaging.",
+            "For hygiene reasons, opened consumables — nutrition, and similar products — cannot be returned unless faulty.",
           ],
         },
         {
-          heading: "The damage guarantee",
+          heading: "Damaged or incorrect orders",
           body: [
-            "If a seam, zip or strap fails within two years of purchase under normal trail use, we repair it free or replace the item if it cannot be repaired. This is the core promise the brand was built on \u2014 no receipt gymnastics, just your order number and a photo.",
+            "If an item arrives damaged or you receive the wrong thing, email us with your order number and a photo within a reasonable time after delivery. We cover return shipping and send the correct item or a full refund — your choice where both are possible.",
           ],
         },
         {
-          heading: "Refused or non-arriving returns",
+          heading: "Faulty gear after use",
           body: [
-            "If a returned item arrives worn, washed or past the 30-day window, we contact you and either return it to you or issue a partial refund, which you can decline.",
+            "A fault that shows up on the trail is a warranty matter, not a return — see the Warranty Policy for coverage and how to claim.",
           ],
         },
+      ]}
+      related={[
+        { href: "/policies/warranty", label: "Warranty Policy" },
+        { href: "/policies/shipping", label: "Shipping & Delivery Policy" },
+        { href: "/policies/cancellation", label: "Cancellation Policy" },
       ]}
     />
   );

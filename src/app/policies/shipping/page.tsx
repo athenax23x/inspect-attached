@@ -2,49 +2,61 @@ import type { Metadata } from "next";
 import PolicyLayout from "../policy-page";
 
 export const metadata: Metadata = {
-  title: "Shipping Policy",
-  description: "Delivery times, costs and coverage for Dirt and Dawn orders across Indonesia.",
+  title: "Shipping & Delivery Policy",
+  description: "Processing, tracking, delivery and lost-parcel handling for Dirt and Dawn orders.",
 };
 
 export default function ShippingPage() {
   return (
     <PolicyLayout
       eyebrow="Legal"
-      title="Shipping Policy"
-      updated="1 November 2026"
-      intro="Every order ships from Bandung, West Java, within 48 hours. Orders over $150 ship free; the code DAWN10 does not affect shipping cost."
+      title="Shipping & Delivery Policy"
+      updated="26 November 2026"
+      intro="Every order ships from our base in Oxon Hill, Maryland. This page covers how orders are processed, how you track them, and what happens when a parcel goes missing."
       sections={[
         {
-          heading: "Destinations and timing",
+          heading: "Order processing",
           body: [
-            "Java: 1\u20132 business days. Sumatra, Kalimantan, Sulawesi, Bali and Nusa Tenggara: 3\u20135 business days. Maluku and Papua: 5\u20138 business days.",
-            "\u201c48 hours\u201d means from payment confirmation to hand-over to the courier, not door-to-door time.",
+            "Orders are packed and prepared for handover on business days after payment is confirmed. You receive a confirmation email the moment your order is received, and another with tracking when it ships.",
           ],
         },
         {
-          heading: "Costs",
+          heading: "Shipping methods and costs",
           body: [
-            "Standard shipping is a flat $8 across Indonesia, free on orders of $150 or more after discounts. You will see the final shipping cost at checkout before you pay.",
+            "The shipping options and their exact costs are shown at checkout before you pay — the final charge never changes after you confirm.",
+            { pending: "shipping methods, rates and any free-shipping threshold, to be confirmed by the business owner." },
           ],
         },
         {
-          heading: "Tracking",
+          heading: "Delivery estimates",
           body: [
-            "You receive a tracking link by email the moment your parcel is scanned by the courier. If tracking has not moved for 5 days, contact support@dirtanddawn.com and we will chase the courier for you.",
+            { pending: "delivery destinations and estimates per destination, to be confirmed by the business owner." },
+            "Delivery estimates run from dispatch, not from the moment you order — the order confirmation and tracking email show the exact dates that apply to your parcel.",
           ],
         },
         {
-          heading: "Failed delivery",
+          heading: "Tracking information",
           body: [
-            "The courier attempts delivery three times before returning a parcel to us. We will contact you to arrange reshipping; a second shipping fee applies only if the original address was wrong.",
+            "You receive a tracking link by email the moment your parcel is scanned by the courier. If tracking has not moved for several business days, contact us at dirtndawn@hotmail.com and we will chase the courier for you.",
           ],
         },
         {
-          heading: "Damage in transit",
+          heading: "Delays and lost packages",
           body: [
-            "If a parcel arrives damaged, photograph it before opening if you can, and email us within 7 days. We replace damaged items at our cost, including shipping.",
+            "Weather, carrier backlogs and address problems can delay a parcel beyond anyone's estimate. If a parcel is declared lost by the courier, we ship a replacement or refund the order — you do not carry the loss for a parcel that never arrived.",
           ],
         },
+        {
+          heading: "International shipping",
+          body: [
+            { pending: "whether international shipping is offered, and to which destinations, to be confirmed by the business owner." },
+          ],
+        },
+      ]}
+      related={[
+        { href: "/policies/returns", label: "Refund & Returns Policy" },
+        { href: "/policies/cancellation", label: "Cancellation Policy" },
+        { href: "/policies/contact", label: "Contact & Customer Support" },
       ]}
     />
   );

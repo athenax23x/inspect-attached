@@ -64,7 +64,7 @@ export default function ProductCard({ product, priority }: { product: Product; p
           <p className="text-xs text-charcoal/50 mt-0.5">{product.subcategory}</p>
         </div>
         <div className="text-sm whitespace-nowrap">
-          <span className={product.compareAtPrice ? "text-earth" : ""}>{fmt(product.price)}</span>
+          <span className={product.compareAtPrice ? "text-earth-dark" : ""}>{fmt(product.price)}</span>
           {product.compareAtPrice && (
             <span className="ml-2 text-xs text-charcoal/40 line-through">{fmt(product.compareAtPrice)}</span>
           )}

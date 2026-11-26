@@ -4,6 +4,9 @@
   --color-bone: #f4f2ec;
   --color-charcoal: #20211e;
   --color-earth: #82735f;
+  --color-earth-dark: #5c5140;
+  --color-bone-muted: #c9c7bd;
+  --color-charcoal-muted: #5f6058;
   --color-forest: #34483a;
   --color-sand: #d8cebd;
   --color-sand-light: #e6dfd2;
@@ -54,5 +57,9 @@ body {
 }
 
 .eyebrow {
-  @apply text-xs font-semibold uppercase tracking-[0.25em] text-earth;
+  @apply text-xs font-semibold uppercase tracking-[0.25em] text-earth-dark;
+}
+
+.pending-note {
+  @apply border-l-2 border-earth bg-sand-light/70 px-4 py-3 italic text-charcoal-muted;
 }

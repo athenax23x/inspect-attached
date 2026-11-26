@@ -96,7 +96,7 @@ export default function ProductPurchase({ product }: { product: Product }) {
       </div>
 
       <p className="mt-4 text-xs text-charcoal/50">
-        {fmt(product.price)} · Free shipping over $150 · 30-day trail-tested returns
+        {fmt(product.price)} · Shipping rates at checkout · 30-day returns
       </p>
     </div>
   );

@@ -3,7 +3,7 @@ import PolicyLayout from "../policy-page";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description: "The terms that govern your use of the Dirt and Dawn store and purchases from us.",
+  description: "The terms that govern your use of dirtdawn.solutions and every purchase you make there.",
 };
 
 export default function TermsPage() {
@@ -11,53 +11,78 @@ export default function TermsPage() {
     <PolicyLayout
       eyebrow="Legal"
       title="Terms & Conditions"
-      updated="1 November 2026"
-      intro="These terms govern your use of dirtanddawn.com and any purchase you make through it. By placing an order or creating an account, you agree to them."
+      updated="26 November 2026"
+      intro="These terms govern your use of dirtdawn.solutions and any purchase you make through it. By placing an order or creating an account, you agree to them."
       sections={[
         {
-          heading: "1. Who we are",
+          heading: "Acceptance of terms",
           body: [
-            "Dirt and Dawn (\u201cwe\u201d, \u201cus\u201d) is a trail running brand registered in Bandung, Indonesia. We sell apparel, equipment and accessories for trail and road running, shipped across Indonesia.",
+            "By browsing dirtdawn.solutions, creating an account or placing an order, you accept these Terms & Conditions in full. If you do not accept them, please do not use the store.",
           ],
         },
         {
-          heading: "2. Orders and acceptance",
+          heading: "Eligibility and your responsibilities",
           body: [
-            "Your order is an offer to buy. A contract exists only when we send an order confirmation email. If we cannot fulfil an order \u2014 for example a sizing run sells out \u2014 we cancel it and refund you in full within 5 business days.",
-            "We may cancel an order where the price shown was a clear error, where payment cannot be verified, or where delivery cannot be made to the address given.",
+            "You must be able to form a legally binding contract to buy from us. You are responsible for the accuracy of the details you provide — delivery address, contact email and payment details — and for keeping your account credentials secure.",
           ],
         },
         {
-          heading: "3. Pricing and payment",
+          heading: "Product descriptions and availability",
           body: [
-            "Prices are shown in US dollars and include applicable taxes. We accept Visa, Mastercard, American Express and bank transfer. Payment is taken in full when your order ships.",
-            "Promotional codes such as DAWN10 apply to full-price items only and cannot be combined unless stated.",
+            "We describe and photograph our gear as carefully as we can, but colours can render differently between screens, and small production variations are normal. Products are subject to availability; if an item sells out after you order, we cancel that line and refund it.",
           ],
         },
         {
-          heading: "4. Products and imagery",
+          heading: "Pricing and payment",
           body: [
-            "We describe and photograph every product honestly, but colours may vary slightly between screens. Product measurements are given in centimetres on each size guide.",
+            "Prices are shown on each product page, and the full total — including shipping and any applicable taxes — is displayed at checkout before you confirm payment. We may cancel an order where the price shown was a clear error, where payment cannot be verified, or where delivery cannot be made to the address given.",
+            { pending: "the definitive list of accepted payment methods and the applicable tax treatment, to be confirmed by the business owner." },
           ],
         },
         {
-          heading: "5. Accounts",
+          heading: "Orders and order acceptance",
           body: [
-            "You are responsible for keeping your account password confidential and for activity under your account. Tell us immediately if you suspect unauthorised use.",
+            "Your order is an offer to buy. A contract between you and Dirt Dawn is formed when we send the order confirmation email. Until then, we may decline an order and refund any payment taken.",
           ],
         },
         {
-          heading: "6. Liability",
+          heading: "Shipping and delivery",
           body: [
-            "Nothing in these terms limits our liability for death or personal injury caused by negligence, or for fraud. Otherwise our liability for any order is limited to the amount you paid for it.",
+            "Delivery is handled under our Shipping & Delivery Policy, which forms part of these terms.",
+            { pending: "shipping destinations and delivery estimates, to be confirmed by the business owner." },
           ],
         },
         {
-          heading: "7. Governing law",
+          heading: "Returns and refunds",
           body: [
-            "These terms are governed by the laws of the Republic of Indonesia. Disputes are subject to the exclusive jurisdiction of the courts of Bandung.",
+            "Returns, exchanges and refunds work as described in our Refund & Returns Policy.",
+            { pending: "the return and refund timeframes, to be confirmed by the business owner." },
           ],
         },
+        {
+          heading: "Intellectual property",
+          body: [
+            "The Dirt and Dawn name, wordmarks, photography and site design belong to Dirt Dawn and may not be copied or used commercially without written permission.",
+          ],
+        },
+        {
+          heading: "Limitation of liability",
+          body: [
+            "To the maximum extent permitted by law, our liability for any claim connected with an order is limited to the amount you paid for the products in that order. We are not liable for indirect or consequential losses. Nothing in these terms limits liability that cannot be limited by law.",
+            { pending: "governing law and jurisdiction, to be confirmed by the business owner." },
+          ],
+        },
+        {
+          heading: "Changes to these terms",
+          body: [
+            "We may update these terms from time to time. The version in force is the one on this page at the moment you place your order.",
+          ],
+        },
+      ]}
+      related={[
+        { href: "/policies/privacy", label: "Privacy Policy" },
+        { href: "/policies/returns", label: "Refund & Returns Policy" },
+        { href: "/policies/shipping", label: "Shipping & Delivery Policy" },
       ]}
     />
   );

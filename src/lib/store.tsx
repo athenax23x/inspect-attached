@@ -42,11 +42,14 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    // Intentional one-time hydration: localStorage is only readable after mount.
+    /* eslint-disable react-hooks/set-state-in-effect */
     setCart(load("dd-cart", []));
     setWishlist(load("dd-wishlist", []));
     setOrders(load("dd-orders", []));
     setUser(load("dd-user", null));
     setHydrated(true);
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 
   useEffect(() => { if (hydrated) localStorage.setItem("dd-cart", JSON.stringify(cart)); }, [cart, hydrated]);

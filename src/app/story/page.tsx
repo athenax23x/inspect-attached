@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { PRODUCTS } from "@/lib/products";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Our Story",
-  description: "How Dirt and Dawn grew from 4:30 a.m. runs on Bandung's volcano trails into a premium trail running brand.",
+  description: "Dirt and Dawn makes outdoor and trail-running gear for early starts and long days — honest kit for hard ground.",
 };
 
 export default function StoryPage() {
@@ -16,44 +16,40 @@ export default function StoryPage() {
         <div className="absolute inset-0 flex items-center">
           <div className="container-x text-bone">
             <p className="eyebrow text-sand">Our Story</p>
-            <h1 className="mt-3 font-display text-4xl md:text-5xl">Born before first light</h1>
+            <h1 className="mt-3 font-display text-4xl md:text-5xl">Built before first light</h1>
           </div>
         </div>
       </section>
 
       <section className="container-x max-w-2xl py-16 space-y-6 text-sm leading-relaxed text-charcoal/80">
         <p>
-          Dirt and Dawn started in 2023 with four friends and one rule: be on the trail by 4:30. Sundays meant
-          headlamps in the dark on the slopes above Bandung, instant coffee at the summit, and a long argument
-          about gear that never quite survived the humidity.
+          Dirt and Dawn exists for the early starts: the headlamp miles, the cold coffee, the long
+          climb that earns the sunrise. We make outdoor and trail-running gear for people who would
+          rather be on the trail when the day begins than anywhere else.
         </p>
         <p>
-          We couldn&apos;t find kit built for our conditions — tropical downpours, volcanic grit, 30-degree climbs
-          — so we started making it. First a tee that didn&apos;t chafe under a race vest. Then the vest. Then the
-          jacket for the storm that always came at the halfway point.
+          Our approach is simple. Every piece in the range — from a featherweight merino tee to a
+          12-litre race vest — is designed around real use on hard ground and in changing weather,
+          with details that earn their place and nothing that doesn&apos;t. And it is priced so the
+          entry fee never outruns the trail fee.
         </p>
         <p>
-          Today we still test every product on the same trails, in the same dark. Nothing ships until it has
-          survived a full season of Sundays. {PRODUCTS.length} products in, the rule hasn&apos;t changed:
-          honest gear, made for hard ground, priced so the entry fee never outruns the trail fee.
+          We are an independent brand based in Oxon Hill, Maryland, shipping internationally. As the
+          range grows, so does the standard we hold it to: honest kit, made for movement, ready
+          before first light.
         </p>
-        <div className="grid gap-6 pt-6 sm:grid-cols-3">
-          {[["23", "Products tested"], ["4:30", "Start time, always"], ["100%", "Trail-proven"]].map(([n, l]) => (
-            <div key={l} className="bg-sand-light p-6 text-center">
-              <p className="font-display text-3xl">{n}</p>
-              <p className="mt-1 text-xs uppercase tracking-[0.15em] text-charcoal/60">{l}</p>
-            </div>
-          ))}
-        </div>
       </section>
 
-      <section id="contact" className="bg-forest text-bone">
+      <section className="bg-forest text-bone">
         <div className="container-x py-16 text-center">
-          <h2 className="font-display text-3xl">Run with us</h2>
+          <h2 className="font-display text-3xl">Gear up with us</h2>
           <p className="mx-auto mt-3 max-w-md text-sm text-bone/75">
-            Group runs every Sunday, 4:30, from the studio in Bandung. Questions about kit or orders — write to hello@dirtanddawn.run.
+            Questions about kit, orders or anything else — write to dirtndawn@hotmail.com.
           </p>
-          <a href="mailto:hello@dirtanddawn.run" className="mt-6 inline-block btn-light">Contact Us</a>
+          <div className="mt-6 flex justify-center gap-4">
+            <Link href="/shop/all" className="btn-light">Shop the Collection</Link>
+            <a href="mailto:dirtndawn@hotmail.com" className="btn border border-bone/60 text-bone hover:bg-bone hover:text-charcoal">Contact Us</a>
+          </div>
         </div>
       </section>
     </>

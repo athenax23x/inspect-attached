@@ -26,7 +26,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <div className="container-x py-10">
-      <nav className="text-xs uppercase tracking-[0.15em] text-charcoal/50">
+      <nav className="text-xs uppercase tracking-[0.15em] text-charcoal/50 flex flex-wrap items-center gap-y-1">
         <Link href="/shop/all" className="hover:text-charcoal">Shop</Link>
         <span className="mx-2">/</span>
         <Link href={`/shop/${product.category}`} className="hover:text-charcoal">{product.category}</Link>
@@ -44,11 +44,6 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             priority
             className="aspect-[4/5] w-full object-cover bg-sand-light"
           />
-          <div className="grid grid-cols-3 gap-4">
-            <Image src="/stock/hero-trail.jpg" alt="On the trail" width={400} height={400} className="aspect-square w-full object-cover" />
-            <Image src="/stock/story-runner.jpg" alt="At dawn" width={400} height={400} className="aspect-square w-full object-cover" />
-            <Image src="/stock/cat-equipment.jpg" alt="In the pack" width={400} height={400} className="aspect-square w-full object-cover" />
-          </div>
         </div>
 
         <div>
@@ -58,16 +53,31 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <span className="text-xl">{product.compareAtPrice ? (
               <><span className="text-earth">{`$${product.price}`}</span><span className="ml-2 text-sm text-charcoal/40 line-through">{`$${product.compareAtPrice}`}</span></>
             ) : `$${product.price}`}</span>
-            <span className="text-sm text-charcoal/50">★ {product.rating} ({product.reviews} reviews)</span>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-charcoal/80">{product.description}</p>
           <ProductPurchase product={product} />
-          <div className="mt-10 border-t border-charcoal/10 pt-6">
-            <p className="label mb-3">Details</p>
-            <ul className="space-y-2 text-sm text-charcoal/75">
-              {product.details.map((d) => <li key={d} className="flex gap-2"><span className="text-earth">—</span>{d}</li>)}
-            </ul>
+          {product.details.length > 0 && (
+            <div className="mt-10 border-t border-charcoal/10 pt-6">
+              <p className="label mb-3">Details</p>
+              <ul className="space-y-2 text-sm text-charcoal/75">
+                {product.details.map((d) => <li key={d} className="flex gap-2"><span className="text-earth">—</span>{d}</li>)}
+              </ul>
+            </div>
+          )}
+          <div className="mt-6 border-t border-charcoal/10 pt-6 text-sm text-charcoal/70 space-y-1 leading-relaxed">
+            <p>Shipping options and rates are shown at checkout. We ship internationally.</p>
+            <p>
+              30-day returns — see{" "}
+              <Link href="/policies/returns" className="underline hover:text-charcoal">Returns &amp; Refunds</Link>
+              {" "}and{" "}
+              <Link href="/policies/shipping" className="underline hover:text-charcoal">Shipping &amp; Delivery</Link>.
+            </p>
           </div>
+          {product.sourcingNote && (
+            <div className="mt-6 border border-charcoal/15 bg-sand-light p-4 text-xs leading-relaxed text-charcoal/70">
+              <strong className="font-semibold">Note:</strong> {product.sourcingNote}
+            </div>
+          )}
         </div>
       </div>
 

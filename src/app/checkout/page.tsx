@@ -25,7 +25,7 @@ export default function CheckoutPage() {
     const subtotal = lines.reduce((n, l) => n + l.lineTotal, 0);
     const discount = applied ? subtotal * applied.rate : 0;
     const ship = SHIPPING_METHODS[shipping].price;
-    return { subtotal, discount, shipping: subtotal >= 150 && shipping === "standard" ? 0 : ship, total: subtotal - discount + (subtotal >= 150 && shipping === "standard" ? 0 : ship) };
+    return { subtotal, discount, shipping: ship, total: subtotal - discount + ship };
   }, [lines, applied, shipping]);
 
   const applyCode = () => {
@@ -113,10 +113,7 @@ export default function CheckoutPage() {
             <p className="mt-2 text-xs text-charcoal/50">Demo store — no payment is processed. Card fields are placeholders.</p>
             <div className="mt-4 space-y-2">
               {[
-                { k: "card", label: "Credit / Debit Card (Stripe-ready)" },
-                { k: "qris", label: "QRIS" },
-                { k: "gopay", label: "GoPay" },
-                { k: "transfer", label: "Bank Transfer" },
+                { k: "card", label: "Credit / Debit Card — processed securely by NMI" },
               ].map((o) => (
                 <label key={o.k} className={`flex cursor-pointer items-center gap-3 border px-4 py-3 text-sm ${payment === o.k ? "border-charcoal bg-sand-light" : "border-charcoal/20"}`}>
                   <input type="radio" name="payment" checked={payment === o.k} onChange={() => setPayment(o.k)} />
@@ -156,7 +153,7 @@ export default function CheckoutPage() {
           <dl className="mt-5 space-y-2 border-t border-charcoal/15 pt-4 text-sm">
             <div className="flex justify-between"><dt className="text-charcoal/60">Subtotal</dt><dd>{fmt(totals.subtotal)}</dd></div>
             {totals.discount > 0 && <div className="flex justify-between text-forest"><dt>Discount</dt><dd>−{fmt(totals.discount)}</dd></div>}
-            <div className="flex justify-between"><dt className="text-charcoal/60">Shipping</dt><dd>{totals.shipping === 0 ? "Free" : fmt(totals.shipping)}</dd></div>
+            <div className="flex justify-between"><dt className="text-charcoal/60">Shipping</dt><dd>{fmt(totals.shipping)}</dd></div>
             <div className="flex justify-between border-t border-charcoal/15 pt-2 text-base font-semibold"><dt>Total</dt><dd>{fmt(totals.total)}</dd></div>
           </dl>
           <button className="btn-primary mt-6 w-full">Place Order</button>

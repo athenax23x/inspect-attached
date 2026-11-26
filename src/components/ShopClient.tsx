@@ -10,16 +10,29 @@ const SORTS = {
   "price-asc": "Price: Low → High",
   "price-desc": "Price: High → Low",
   newest: "Newest",
-  rating: "Top Rated",
 } as const;
 type Sort = keyof typeof SORTS;
 
-export default function ShopClient({ category }: { category: Category | "all" }) {
-  const [sub, setSub] = useState<string[]>([]);
-  const [sort, setSort] = useState<Sort>("featured");
+export default function ShopClient({
+  category,
+  title: heading,
+  initialSort = "featured",
+  initialOnlyNew = false,
+  initialOnlySale = false,
+  initialSub = [],
+}: {
+  category: Category | "all";
+  title?: string;
+  initialSort?: Sort;
+  initialOnlyNew?: boolean;
+  initialOnlySale?: boolean;
+  initialSub?: string[];
+}) {
+  const [sub, setSub] = useState<string[]>(initialSub);
+  const [sort, setSort] = useState<Sort>(initialSort);
   const [maxPrice, setMaxPrice] = useState(250);
-  const [onlyNew, setOnlyNew] = useState(false);
-  const [onlySale, setOnlySale] = useState(false);
+  const [onlyNew, setOnlyNew] = useState(initialOnlyNew);
+  const [onlySale, setOnlySale] = useState(initialOnlySale);
   const [query, setQuery] = useState("");
   const [filtersOpen, setFiltersOpen] = useState(false);
 
@@ -40,13 +53,12 @@ export default function ShopClient({ category }: { category: Category | "all" })
       case "price-asc": list = [...list].sort((a, b) => a.price - b.price); break;
       case "price-desc": list = [...list].sort((a, b) => b.price - a.price); break;
       case "newest": list = [...list].sort((a, b) => Number(b.isNew ?? false) - Number(a.isNew ?? false)); break;
-      case "rating": list = [...list].sort((a, b) => b.rating - a.rating); break;
     }
     return list;
   }, [category, sub, maxPrice, onlyNew, onlySale, query, sort]);
 
   const subs = category === "all" ? Object.values(SUBCATEGORIES).flat() : SUBCATEGORIES[category];
-  const title = category === "all" ? "Shop All" : category[0].toUpperCase() + category.slice(1);
+  const title = heading ?? (category === "all" ? "Shop All" : category[0].toUpperCase() + category.slice(1));
 
   const filterPanel = (
     <div className="space-y-8">

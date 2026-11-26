@@ -107,7 +107,7 @@ export default function AdminPage() {
         <div className="mt-8 overflow-x-auto">
           <table className="w-full min-w-[640px] text-sm">
             <thead className="text-left text-xs uppercase tracking-[0.15em] text-charcoal/50">
-              <tr><th className="py-3">Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Sales rank (reviews)</th></tr>
+              <tr><th className="py-3">Product</th><th>Category</th><th>Price</th><th>Stock</th></tr>
             </thead>
             <tbody className="divide-y divide-charcoal/10">
               {PRODUCTS.map((p) => (
@@ -125,7 +125,6 @@ export default function AdminPage() {
                       aria-label={`Stock for ${p.name}`}
                     />
                   </td>
-                  <td className="text-charcoal/60">{p.reviews}</td>
                 </tr>
               ))}
             </tbody>
