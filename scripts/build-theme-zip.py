@@ -22,11 +22,11 @@ def main() -> int:
     OUT.unlink(missing_ok=True)
     with zipfile.ZipFile(OUT, "w", zipfile.ZIP_DEFLATED) as archive:
         for dirpath, dirnames, filenames in os.walk(SRC):
-            dirnames[:] = sorted(d for d in dirnames if d != ".git")
+            dirnames[:] = sorted(d for d in dirnames if d not in {".git", "node_modules"})
             rel = Path(dirpath).relative_to(SRC.parent)
             archive.writestr(f"{rel.as_posix()}/", "")
             for name in sorted(filenames):
-                if name == ".DS_Store":
+                if name in {".DS_Store", ".gitignore"}:
                     continue
                 path = Path(dirpath) / name
                 archive.write(path, (rel / name).as_posix())
