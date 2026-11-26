@@ -1,0 +1,31 @@
+name: Publish theme-only branch
+
+# Fitur Git Hostinger men-deploy SELURUH isi branch ke satu folder, jadi branch
+# ini hanya berisi isi wordpress-theme/dirt-dawn. Arahkan koneksi Git Hostinger
+# ke branch deploy/wordpress-theme dengan deploy directory
+# wp-content/themes/dirt-dawn.
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'wordpress-theme/dirt-dawn/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Publish deploy/wordpress-theme
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git subtree split --prefix=wordpress-theme/dirt-dawn -b deploy/wordpress-theme
+          git push --force origin deploy/wordpress-theme:refs/heads/deploy/wordpress-theme
