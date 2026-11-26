@@ -145,3 +145,30 @@ Kalau akun FTP kamu berakar di home directory, set
 | Tema tidak muncul di Appearance → Themes | File tema tidak lengkap — `style.css` harus ada di root folder tema (`wp-content/themes/dirt-dawn/style.css`) |
 | Perubahan tema tidak muncul setelah push | Workflow gagal (cek tab Actions + kredensial FTP) atau cache plugin |
 | Website 500 | `wp-config.php` tertimpa; pulihkan dari backup Hostinger (hPanel → Files → Backups) |
+
+## Penting: jangan edit server langsung
+
+Repo ini terhubung ke fitur Git Hostinger, dan **deployment-nya menimpa
+perubahan manual**. Kalau file tema atau `public_html` diubah langsung lewat
+FTP/File Manager, perubahan itu hilang pada push/deploy berikutnya:
+
+- File yang tidak ada di repo (hasil upload manual) ikut terhapus.
+- File yang ada di repo dikembalikan ke versi commit terakhir.
+
+Jadi **satu-satunya sumber kebenaran adalah repo ini**:
+
+1. Ubah tema di `wordpress-theme/dirt-dawn/`.
+2. Push ke `master`.
+3. Workflow `publish-theme-branch.yml` memperbarui branch `deploy/wordpress-theme`.
+4. Deployment Hostinger menarik branch itu ke `wp-content/themes/dirt-dawn`.
+
+Jangan arahkan deployment ke branch `master` untuk tema: `master` berisi seluruh
+repo (source Next.js, `package.json`, `nextjs-export/`), sehingga file-file itu
+ikut terpublikasi di folder web dan bisa dibaca publik.
+
+## Instalasi tema lewat wp-admin (alternatif)
+
+Kalau deployment Git tema dimatikan, upload `wordpress-theme/dirt-dawn-theme.zip`
+lewat **Appearance → Themes → Add New → Upload Theme**. Zip itu dihasilkan dari
+folder tema di repo dengan `npm run theme:zip`, jadi isinya selalu sama dengan
+versi repo.
