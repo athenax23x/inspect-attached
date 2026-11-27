@@ -6,6 +6,22 @@ Files: `dirt-dawn-theme.zip`, `products.csv`, `pages.xml` (this folder).
 > Deploying to Hostinger with Git instead of uploading the zip? See
 > `../DEPLOY-HOSTINGER.md`. This file is the manual-upload path.
 
+## Jalur cepat: produk + halaman sekaligus (disarankan)
+
+Katalog produk sekarang punya satu sumber: `products-catalog.json`, dibangun
+oleh `scripts/build-product-catalog.py`. Gambar produk ada di
+`product-images/png/` (satu gambar per produk, hanya menampilkan produknya).
+
+```bash
+export FTP_HOST=... FTP_USER=... FTP_PASS=... SITE_URL=https://domain
+scripts/import-products-remote.sh     # 46 produk + gambar, idempoten
+scripts/install-pages-remote.sh       # 11 halaman
+```
+
+Importer produk mencari produk berdasarkan SKU, jadi menjalankannya ulang tidak
+menggandakan apa pun — aman dipakai setiap kali katalog berubah. Langkah manual
+di bawah tetap berlaku kalau Anda lebih suka lewat wp-admin.
+
 ## 1. Install the theme (1 min)
 1. wp-admin → **Appearance → Themes → Add New → Upload Theme**.
 2. Choose `dirt-dawn-theme.zip` → **Install Now** → **Activate**.

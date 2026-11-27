@@ -2,6 +2,14 @@
 
 Owner-internal only. Do not display this file on the storefront.
 
+> **Perubahan November 2026 — foto produk tidak lagi memakai stok.**
+> Seluruh gambar produk sekarang dibuat sendiri (vektor, palet merek) dan
+> tersimpan di `wordpress-import/product-images/`. Setiap gambar hanya
+> menampilkan produknya, tanpa model atau latar pemandangan. Lihat
+> `wordpress-import/product-images/README.md` untuk alasan dan cara
+> membangunnya ulang. Foto stok di bawah ini masih dipakai untuk gambar
+> kategori dan hero, bukan untuk produk.
+
 All photos in `/stock` are free-license images from Pixabay (Pixabay Content License
 — free for commercial use, no attribution required, resale as stock prohibited).
 Credits are kept in `stock/CREDITS.md`.
