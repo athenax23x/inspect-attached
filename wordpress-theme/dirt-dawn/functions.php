@@ -430,8 +430,15 @@ function dirt_dawn_category_image( WP_Term $term, string $size = 'woocommerce_th
 		'shoes'       => 'cat-footwear.jpg',
 	);
 	$file = $map[ $term->slug ] ?? '';
-	if ( '' !== $file && file_exists( get_theme_file_path( 'assets/img/' . $file ) ) ) {
-		return (string) get_theme_file_uri( 'assets/img/' . $file );
+	$path = get_theme_file_path( 'assets/img/' . $file );
+	if ( '' !== $file && file_exists( $path ) ) {
+		// Versi dari waktu berkas: nama berkas kategori tidak berubah saat fotonya
+		// diganti, jadi tanpa ini CDN/browser terus menyajikan gambar lama.
+		return add_query_arg(
+			'ver',
+			(string) filemtime( $path ),
+			(string) get_theme_file_uri( 'assets/img/' . $file )
+		);
 	}
 
 	return '';
