@@ -1,6 +1,6 @@
 [
   {
-    "sku": "DAWN-PATROL-TEE",
+    "sku": "TEE-CHARCOAL",
     "name": "Dawn Patrol Tee",
     "regular_price": "45.00",
     "sale_price": "",
@@ -9,106 +9,122 @@
       "Apparel",
       "Tees"
     ],
-    "short_description": "A featherweight merino-blend tee that breathes on the climb and dries before the summit.",
-    "description": "Cut long so it stays tucked under a pack, with flatlock seams moved away from strap lines. The merino blend resists odour, so one tee covers a multi-day trip.\n\n• Merino / Tencel blend, 140 gsm\n• Flatlock seams, strap-friendly shoulders\n• Naturally odour resistant\n• Weight: 132 g (size M)\n• Machine wash cold, hang dry",
+    "short_description": "A featherweight merino-blend tee in charcoal that breathes on the climb and dries fast.",
+    "description": "A featherweight merino-blend tee in charcoal that breathes on the climb and dries fast.\n\n• Merino / Tencel blend, 140 gsm\n• Flatlock seams, strap-friendly shoulders\n• Naturally odour resistant\n• Weight: 132 g (size M)\n• Machine wash cold, hang dry",
     "tags": [
       "New"
     ],
     "stock": 42
   },
   {
-    "sku": "DAWN-PATROL-TEE-STRIPED",
-    "name": "Dawn Patrol Tee — Forest Stripe",
-    "regular_price": "55.00",
-    "sale_price": "45.00",
-    "image": "tee-striped",
+    "sku": "TEE-FOREST",
+    "name": "Dawn Patrol Tee — Forest",
+    "regular_price": "45.00",
+    "sale_price": "",
+    "image": "tee-forest",
     "categories": [
       "Apparel",
       "Tees"
     ],
-    "short_description": "The Dawn Patrol Tee in a forest stripe, same featherweight merino blend.",
-    "description": "Same cut and fabric as the plain Dawn Patrol Tee, with a yarn-dyed forest stripe that will not crack or fade.\n\n• Merino / Tencel blend, 140 gsm\n• Yarn-dyed stripe, not printed\n• Flatlock seams, strap-friendly shoulders\n• Weight: 134 g (size M)",
+    "short_description": "The Dawn Patrol Tee in forest green, same featherweight merino blend.",
+    "description": "The Dawn Patrol Tee in forest green, same featherweight merino blend.\n\n• Merino / Tencel blend, 140 gsm\n• Flatlock seams, strap-friendly shoulders\n• Naturally odour resistant\n• Weight: 132 g (size M)",
     "tags": [],
-    "stock": 18
+    "stock": 38
   },
   {
-    "sku": "RIDGE-SHORTS",
-    "name": "Ridge 5\" Shorts",
-    "regular_price": "82.00",
-    "sale_price": "68.00",
-    "image": "shorts",
+    "sku": "TEE-RED",
+    "name": "Cadence Run Tee",
+    "regular_price": "39.00",
+    "sale_price": "",
+    "image": "tee-red",
+    "categories": [
+      "Apparel",
+      "Tees"
+    ],
+    "short_description": "A lightweight running tee in clay red with a soft handfeel and a relaxed shoulder.",
+    "description": "A lightweight running tee in clay red with a soft handfeel and a relaxed shoulder.\n\n• Recycled polyester, 120 gsm\n• Relaxed shoulder, straight hem\n• Moisture wicking\n• Weight: 118 g (size M)",
+    "tags": [],
+    "stock": 34
+  },
+  {
+    "sku": "TEE-NAVY",
+    "name": "Base Layer Tee — Navy",
+    "regular_price": "35.00",
+    "sale_price": "",
+    "image": "tee-navy",
+    "categories": [
+      "Apparel",
+      "Tees"
+    ],
+    "short_description": "A plain navy base layer tee for hot days and layering under a shell.",
+    "description": "A plain navy base layer tee for hot days and layering under a shell.\n\n• Cotton-modal blend, 150 gsm\n• Crew neck, straight hem\n• Soft against the skin\n• Weight: 140 g (size M)",
+    "tags": [],
+    "stock": 36
+  },
+  {
+    "sku": "SHORTS-TEAL",
+    "name": "Ridge Shorts",
+    "regular_price": "68.00",
+    "sale_price": "56.00",
+    "image": "shorts-teal",
     "categories": [
       "Apparel",
       "Shorts"
     ],
-    "short_description": "Quick-drying trail shorts with a bonded liner and deep drop-in pockets.",
-    "description": "A 5-inch inseam that clears the knee on steep descents, a bonded liner that does not chafe, and two drop-in pockets that hold a phone without bouncing.\n\n• Recycled ripstop shell, DWR finish\n• Bonded inner brief\n• Two drop-in pockets, one zipped rear\n• Inseam: 5 in / 12.7 cm\n• Weight: 118 g (size M)",
+    "short_description": "Quick-drying trail shorts in teal with a drawcord waist and a bonded liner.",
+    "description": "Quick-drying trail shorts in teal with a drawcord waist and a bonded liner.\n\n• Recycled ripstop shell, DWR finish\n• Bonded inner brief\n• Drawcord waist, zip rear pocket\n• Inseam: 5 in / 12.7 cm\n• Weight: 118 g (size M)",
     "tags": [],
     "stock": 31
   },
   {
-    "sku": "RIDGE-SHORTS-LONG",
-    "name": "Ridge 7\" Shorts",
-    "regular_price": "72.00",
+    "sku": "SHORTS-PATTERN",
+    "name": "Trail Shorts — Leaf Print",
+    "regular_price": "62.00",
     "sale_price": "",
-    "image": "shorts-long",
+    "image": "shorts-pattern",
     "categories": [
       "Apparel",
       "Shorts"
     ],
-    "short_description": "The Ridge short with a 7-inch inseam for longer days and cooler legs.",
-    "description": "Two extra inches of coverage over the 5-inch Ridge, with the same bonded liner, drop-in pockets and quick-drying ripstop.\n\n• Recycled ripstop shell, DWR finish\n• Bonded inner brief\n• Two drop-in pockets, one zipped rear\n• Inseam: 7 in / 17.8 cm\n• Weight: 132 g (size M)",
-    "tags": [],
-    "stock": 22
-  },
-  {
-    "sku": "STORM-CELL-JACKET",
-    "name": "Storm Cell Jacket",
-    "regular_price": "210.00",
-    "sale_price": "",
-    "image": "jacket",
-    "categories": [
-      "Apparel",
-      "Jackets"
-    ],
-    "short_description": "A 2.5-layer shell that packs into its own chest pocket.",
-    "description": "Fully taped seams, a helmet-compatible hood and a chest pocket that swallows the whole jacket. Built for sustained rain on exposed ridges, not just a shower.\n\n• 2.5-layer waterproof shell, 20k/20k\n• Fully taped seams\n• Adjustable hood with wired peak\n• Packs into its own chest pocket\n• Weight: 268 g (size M)",
-    "tags": [],
-    "stock": 18
-  },
-  {
-    "sku": "STORM-CELL-PANTS",
-    "name": "Storm Cell Pants",
-    "regular_price": "235.00",
-    "sale_price": "",
-    "image": "pants",
-    "categories": [
-      "Apparel"
-    ],
-    "short_description": "Waterproof overtrousers with full-length side zips.",
-    "description": "Pull them on over shoes without stopping: full-length zips down both legs, taped seams and a drawcord waist that sits under a pack belt.\n\n• 2.5-layer waterproof shell, 20k/20k\n• Full-length side zips with storm flaps\n• Fully taped seams\n• Drawcord waist\n• Weight: 312 g (size M)",
-    "tags": [],
-    "stock": 14
-  },
-  {
-    "sku": "DAWN-WINDSHELL-JACKET",
-    "name": "Dawn Windshell Jacket",
-    "regular_price": "145.00",
-    "sale_price": "",
-    "image": "jacket-clay",
-    "categories": [
-      "Apparel",
-      "Jackets"
-    ],
-    "short_description": "A packable windshell for cold starts and exposed ridgelines.",
-    "description": "Cuts the wind without holding sweat, packs to the size of a fist and lives in the bottom of a vest for the day the weather turns.\n\n• Wind-resistant ripstop, DWR finish\n• Packs into its own pocket\n• Half-zip with chin guard\n• Reflective logo at the rear\n• Weight: 118 g (size M)",
+    "short_description": "The Ridge short in a leaf print, for days when plain black is not the point.",
+    "description": "The Ridge short in a leaf print, for days when plain black is not the point.\n\n• Recycled ripstop shell, DWR finish\n• Bonded inner brief\n• Two drop-in pockets\n• Inseam: 5 in / 12.7 cm\n• Weight: 120 g (size M)",
     "tags": [
       "New"
     ],
     "stock": 24
   },
   {
-    "sku": "LONG-HAUL-TIGHTS",
+    "sku": "BRA-WHITE",
+    "name": "Cadence Sports Bra",
+    "regular_price": "58.00",
+    "sale_price": "",
+    "image": "bra-white",
+    "categories": [
+      "Apparel",
+      "Sports Bras"
+    ],
+    "short_description": "Medium-support sports bra in white, with a wide underband and no hardware.",
+    "description": "Medium-support sports bra in white, with a wide underband and no hardware.\n\n• Recycled nylon / elastane\n• Medium support, no hardware\n• Wide underband, bonded edges\n• Removable pads\n• Weight: 92 g (size M)",
+    "tags": [],
+    "stock": 28
+  },
+  {
+    "sku": "BRA-BLACK",
+    "name": "Trail Support Bra",
+    "regular_price": "64.00",
+    "sale_price": "",
+    "image": "bra-black",
+    "categories": [
+      "Apparel",
+      "Sports Bras"
+    ],
+    "short_description": "A black high-support bra with a strappy back and adjustable straps.",
+    "description": "A black high-support bra with a strappy back and adjustable straps.\n\n• Recycled nylon / elastane\n• High support\n• Strappy back, adjustable straps\n• Bonded edges, no hardware\n• Weight: 104 g (size M)",
+    "tags": [],
+    "stock": 22
+  },
+  {
+    "sku": "TIGHTS",
     "name": "Long Haul Tights",
     "regular_price": "88.00",
     "sale_price": "",
@@ -118,249 +134,228 @@
       "Tights"
     ],
     "short_description": "Compression tights with a drawcord waist and two thigh pockets.",
-    "description": "Graduated compression that holds up over long days, a flat drawcord waist that stays put, and two thigh pockets for gels and a key.\n\n• Nylon / elastane, 240 gsm\n• Graduated compression\n• Flat drawcord waist\n• Two thigh pockets, one zipped\n• Weight: 196 g (size M)",
+    "description": "Compression tights with a drawcord waist and two thigh pockets.\n\n• Nylon / elastane, 240 gsm\n• Graduated compression\n• Flat drawcord waist\n• Two thigh pockets, one zipped\n• Weight: 196 g (size M)",
     "tags": [],
     "stock": 26
   },
   {
-    "sku": "STORM-CELL-TIGHTS",
+    "sku": "TIGHTS-WARM",
     "name": "Storm Cell Tights",
     "regular_price": "96.00",
     "sale_price": "",
-    "image": "tights-clay",
+    "image": "tights-warm",
     "categories": [
       "Apparel",
       "Tights"
     ],
     "short_description": "Water-repellent winter tights with a brushed inner face.",
-    "description": "A brushed inner face for cold starts and a DWR outer that sheds drizzle and road spray. Same drawcord waist as the Long Haul Tights.\n\n• Brushed-back nylon / elastane\n• DWR finish\n• Flat drawcord waist\n• Reflective print at the ankle\n• Weight: 224 g (size M)",
-    "tags": [
-      "New"
-    ],
-    "stock": 20
-  },
-  {
-    "sku": "CADENCE-BRA",
-    "name": "Cadence Sports Bra",
-    "regular_price": "58.00",
-    "sale_price": "",
-    "image": "bra",
-    "categories": [
-      "Apparel",
-      "Sports Bras"
-    ],
-    "short_description": "Medium-support bra with a wide underband and no hardware.",
-    "description": "Wide underband, bonded edges and no clasps anywhere, so nothing digs in under a race vest on a long descent.\n\n• Recycled nylon / elastane\n• Medium support, no hardware\n• Wide underband, bonded edges\n• Removable pads\n• Weight: 92 g (size M)",
-    "tags": [],
-    "stock": 24
-  },
-  {
-    "sku": "TRAIL-SUPPORT-BRA",
-    "name": "Trail Support Bra",
-    "regular_price": "64.00",
-    "sale_price": "",
-    "image": "bra-sand",
-    "categories": [
-      "Apparel",
-      "Sports Bras"
-    ],
-    "short_description": "High-support bra with adjustable straps for long days out.",
-    "description": "Higher coverage and adjustable straps for runners who want more support, with the same bonded, hardware-free build as the Cadence.\n\n• Recycled nylon / elastane\n• High support\n• Adjustable straps\n• Bonded edges, no hardware\n• Weight: 104 g (size M)",
-    "tags": [
-      "New"
-    ],
-    "stock": 18
-  },
-  {
-    "sku": "FIRST-LIGHT-VEST",
-    "name": "First Light Vest",
-    "regular_price": "125.00",
-    "sale_price": "",
-    "image": "vest-insulated",
-    "categories": [
-      "Apparel",
-      "Vests & Layers"
-    ],
-    "short_description": "A packable insulated gilet for cold starts and fast descents.",
-    "description": "Recycled synthetic fill that keeps working when damp, in a gilet cut that leaves your arms free to move.\n\n• Recycled synthetic fill, 60 gsm\n• Packable into its own pocket\n• Two zipped hand pockets\n• Elasticated armholes\n• Weight: 218 g (size M)",
+    "description": "Water-repellent winter tights with a brushed inner face.\n\n• Brushed-back nylon / elastane\n• DWR finish\n• Flat drawcord waist\n• Reflective print at the ankle\n• Weight: 224 g (size M)",
     "tags": [],
     "stock": 20
   },
   {
-    "sku": "DAWN-LAYER-VEST",
-    "name": "Dawn Layer Vest",
-    "regular_price": "115.00",
-    "sale_price": "",
-    "image": "vest-insulated-clay",
-    "categories": [
-      "Apparel",
-      "Vests & Layers"
-    ],
-    "short_description": "A lighter insulated gilet in clay, for shoulder-season runs.",
-    "description": "Half the fill of the First Light Vest, so it packs smaller and still cuts the wind on an early start.\n\n• Recycled synthetic fill, 40 gsm\n• Packable into its own pocket\n• Wind-resistant face fabric\n• Weight: 176 g (size M)",
-    "tags": [
-      "New"
-    ],
-    "stock": 22
-  },
-  {
-    "sku": "SUMMIT-RACE-VEST-12",
-    "name": "Summit Race Vest 12L",
-    "regular_price": "165.00",
-    "sale_price": "",
-    "image": "race-vest",
-    "categories": [
-      "Equipment",
-      "Race Vests"
-    ],
-    "short_description": "A 12-litre race vest for unsupported days and long mountain races.",
-    "description": "Two front bottle pockets, a roll-top main compartment and enough rear volume for a full day out. Bounce-free when the straps are set right.\n\n• 12 L total volume\n• Two 500 ml front flask pockets\n• Roll-top main compartment\n• Pole carry on the rear\n• Weight: 245 g",
-    "tags": [],
-    "stock": 15
-  },
-  {
-    "sku": "RACE-VEST-5",
-    "name": "Summit Race Vest 5L",
-    "regular_price": "125.00",
-    "sale_price": "",
-    "image": "race-vest-forest",
-    "categories": [
-      "Equipment",
-      "Race Vests"
-    ],
-    "short_description": "The 5-litre race vest for shorter races and fast training days.",
-    "description": "The Summit vest with the volume stripped back to 5 litres, for races with aid stations and days when you carry only the essentials.\n\n• 5 L total volume\n• Two 500 ml front flask pockets\n• Zipped rear pocket\n• Weight: 186 g",
-    "tags": [],
-    "stock": 19
-  },
-  {
-    "sku": "WANDER-PACK-28",
+    "sku": "PACK-28",
     "name": "Wander Pack 28L",
     "regular_price": "185.00",
     "sale_price": "",
-    "image": "backpack",
+    "image": "backpack-28",
     "categories": [
       "Equipment",
       "Backpacks"
     ],
     "short_description": "A 28-litre pack for long day routes and fast overnighters.",
-    "description": "A ventilated back panel, side compression that cinches down when the load is small, and a lid pocket for the things you want without stopping.\n\n• 28 L total volume\n• Ventilated back panel\n• Dual side compression\n• Hydration sleeve, 3 L\n• Weight: 780 g",
+    "description": "A 28-litre pack for long day routes and fast overnighters.\n\n• 28 L total volume\n• Ventilated back panel\n• Dual side compression\n• Hydration sleeve, 3 L\n• Weight: 780 g",
     "tags": [],
-    "stock": 12
+    "stock": 14
   },
   {
-    "sku": "WANDER-PACK-20",
+    "sku": "PACK-20",
     "name": "Wander Pack 20L",
     "regular_price": "155.00",
     "sale_price": "",
-    "image": "backpack-small",
+    "image": "backpack-20",
     "categories": [
       "Equipment",
       "Backpacks"
     ],
     "short_description": "A 20-litre version of the Wander Pack for shorter days.",
-    "description": "Same back panel and compression as the 28 L, in a smaller shell that sits high and stays put when you run the descents.\n\n• 20 L total volume\n• Ventilated back panel\n• Dual side compression\n• Hydration sleeve, 2 L\n• Weight: 640 g",
+    "description": "A 20-litre version of the Wander Pack for shorter days.\n\n• 20 L total volume\n• Ventilated back panel\n• Dual side compression\n• Hydration sleeve, 2 L\n• Weight: 640 g",
     "tags": [],
-    "stock": 16
+    "stock": 18
   },
   {
-    "sku": "SOFTFLASK-500",
+    "sku": "PACK-DAY",
+    "name": "Day Pack 12L",
+    "regular_price": "115.00",
+    "sale_price": "",
+    "image": "backpack-day",
+    "categories": [
+      "Equipment",
+      "Backpacks"
+    ],
+    "short_description": "A compact 12-litre day pack with a front organiser panel.",
+    "description": "A compact 12-litre day pack with a front organiser panel.\n\n• 12 L total volume\n• Front organiser panel\n• Padded laptop sleeve\n• Weight: 520 g",
+    "tags": [
+      "New"
+    ],
+    "stock": 20
+  },
+  {
+    "sku": "BOTTLE-500",
     "name": "Soft Flask 500 ml",
     "regular_price": "22.00",
     "sale_price": "",
-    "image": "bottle",
+    "image": "bottle-500",
     "categories": [
       "Equipment",
       "Hydration"
     ],
-    "short_description": "A 500 ml soft flask that shrinks as you drink.",
-    "description": "Collapses to nothing as it empties, so it stops sloshing on the second half of a run. Fits the Summit vest front pockets.\n\n• 500 ml capacity\n• Collapses as it empties\n• Wide 42 mm bite valve\n• BPA-free TPU\n• Weight: 46 g",
+    "short_description": "A 500 ml bottle that collapses as you drink, so it stops sloshing.",
+    "description": "A 500 ml bottle that collapses as you drink, so it stops sloshing.\n\n• 500 ml capacity\n• Collapses as it empties\n• Wide bite valve\n• BPA-free TPU\n• Weight: 46 g",
     "tags": [],
     "stock": 60
   },
   {
-    "sku": "SOFTFLASK-250",
+    "sku": "BOTTLE-250",
     "name": "Soft Flask 250 ml",
     "regular_price": "18.00",
     "sale_price": "",
-    "image": "bottle-forest",
+    "image": "bottle-250",
     "categories": [
       "Equipment",
       "Hydration"
     ],
-    "short_description": "The 250 ml soft flask for short races and top-ups.",
-    "description": "Half the volume of the 500 ml flask, for races with aid stations or for carrying electrolytes alongside plain water.\n\n• 250 ml capacity\n• Collapses as it empties\n• Wide 42 mm bite valve\n• BPA-free TPU\n• Weight: 32 g",
-    "tags": [
-      "New"
-    ],
+    "short_description": "The 250 ml flask for short races and top-ups.",
+    "description": "The 250 ml flask for short races and top-ups.\n\n• 250 ml capacity\n• Collapses as it empties\n• Wide bite valve\n• BPA-free TPU\n• Weight: 32 g",
+    "tags": [],
     "stock": 48
   },
   {
-    "sku": "CARBON-POLES",
-    "name": "Carbon Poles (pair)",
-    "regular_price": "195.00",
+    "sku": "BOTTLE-STEEL",
+    "name": "Insulated Steel Flask 600 ml",
+    "regular_price": "34.00",
     "sale_price": "",
-    "image": "poles",
+    "image": "bottle-steel",
     "categories": [
       "Equipment",
-      "Trekking Poles"
+      "Hydration"
     ],
-    "short_description": "Three-section carbon poles that fold down to 38 cm.",
-    "description": "Z-fold carbon shafts that stow on the race vest when the terrain runs, with cork grips that stay grippy when wet.\n\n• Carbon Z-fold, three sections\n• Folded length: 38 cm\n• Cork grip, extended foam lower\n• Weight: 198 g per pole",
+    "short_description": "A double-walled steel flask that keeps water cold all day.",
+    "description": "A double-walled steel flask that keeps water cold all day.\n\n• 600 ml capacity\n• Double-walled, vacuum insulated\n• Keeps cold 24 h, hot 12 h\n• Leak-proof screw cap\n• Weight: 320 g",
     "tags": [],
-    "stock": 14
+    "stock": 32
   },
   {
-    "sku": "ALPINE-POLES",
-    "name": "Alpine Poles (pair)",
-    "regular_price": "165.00",
+    "sku": "MAT",
+    "name": "Training Mat",
+    "regular_price": "45.00",
     "sale_price": "",
-    "image": "poles-sand",
+    "image": "mat",
     "categories": [
       "Equipment",
-      "Trekking Poles"
+      "Mats"
     ],
-    "short_description": "Aluminium poles for rocky ground and heavier loads.",
-    "description": "Aluminium shafts take more abuse than carbon on rock, with the same cork grips and Z-fold pack size.\n\n• Aluminium Z-fold, three sections\n• Folded length: 40 cm\n• Cork grip, extended foam lower\n• Weight: 246 g per pole",
-    "tags": [
-      "New"
-    ],
-    "stock": 16
-  },
-  {
-    "sku": "ORGANIZER-CUBES",
-    "name": "Base Camp Organizer Cubes",
-    "regular_price": "42.00",
-    "sale_price": "",
-    "image": "cubes",
-    "categories": [
-      "Equipment",
-      "Packing Cubes"
-    ],
-    "short_description": "A three-piece packing cube set for race weekends and travel.",
-    "description": "Three sizes that nest inside each other when empty, with a mesh face so you can see what is where without unpacking.\n\n• Set of three: 12 L, 8 L, 4 L\n• Nest inside each other when empty\n• Mesh face panels\n• Water-resistant ripstop\n• Weight: 186 g (set)",
+    "short_description": "A rolled training mat for warm-ups, stretching and post-run work.",
+    "description": "A rolled training mat for warm-ups, stretching and post-run work.\n\n• 183 x 61 cm\n• 6 mm closed-cell foam\n• Non-slip textured surface\n• Carry strap included\n• Weight: 900 g",
     "tags": [],
-    "stock": 34
+    "stock": 26
   },
   {
-    "sku": "TRAIL-ORGANIZER-CUBES",
-    "name": "Trail Organizer Cubes (2 pack)",
-    "regular_price": "32.00",
+    "sku": "ROLLER-BLUE",
+    "name": "Recovery Roller",
+    "regular_price": "55.00",
     "sale_price": "",
-    "image": "cubes-sand",
+    "image": "roller-blue",
     "categories": [
-      "Equipment",
-      "Packing Cubes"
+      "Recovery",
+      "Massage & Rollers"
     ],
-    "short_description": "Two smaller cubes sized for shoes and wet kit.",
-    "description": "A two-piece set in sand, sized for a pair of shoes and a wet layer, with a wipe-clean lining.\n\n• Set of two: 6 L, 3 L\n• Wipe-clean lining\n• Water-resistant ripstop\n• Weight: 112 g (set)",
-    "tags": [
-      "New"
-    ],
+    "short_description": "A hollow-core foam roller for post-run legs.",
+    "description": "A hollow-core foam roller for post-run legs.\n\n• Length: 33 cm\n• Hollow EVA core, firm density\n• Textured surface\n• Weight: 420 g",
+    "tags": [],
     "stock": 28
   },
   {
-    "sku": "DAWN-CAP",
+    "sku": "ROLLER-BLACK",
+    "name": "Grid Roller",
+    "regular_price": "62.00",
+    "sale_price": "",
+    "image": "roller-black",
+    "categories": [
+      "Recovery",
+      "Massage & Rollers"
+    ],
+    "short_description": "A grid-pattern roller that works deeper into the quads and calves.",
+    "description": "A grid-pattern roller that works deeper into the quads and calves.\n\n• Length: 33 cm\n• Grid surface for deeper pressure\n• Hollow core\n• Weight: 440 g",
+    "tags": [],
+    "stock": 24
+  },
+  {
+    "sku": "ROLLER-TEAL",
+    "name": "Deep Tissue Roller",
+    "regular_price": "58.00",
+    "sale_price": "",
+    "image": "roller-teal",
+    "categories": [
+      "Recovery",
+      "Massage & Rollers"
+    ],
+    "short_description": "A denser roller for heavy legs and long descents.",
+    "description": "A denser roller for heavy legs and long descents.\n\n• Length: 30 cm\n• High-density foam\n• Dense nub surface\n• Weight: 380 g",
+    "tags": [
+      "New"
+    ],
+    "stock": 20
+  },
+  {
+    "sku": "SOCKS-WHITE",
+    "name": "Merino Trail Socks",
+    "regular_price": "26.00",
+    "sale_price": "",
+    "image": "socks-white",
+    "categories": [
+      "Accessories",
+      "Socks"
+    ],
+    "short_description": "Cushioned merino trail socks in white, sold as a pair.",
+    "description": "Cushioned merino trail socks in white, sold as a pair.\n\n• Merino blend, 200-needle\n• Cushioned heel and toe\n• Seamless toe\n• Sold as one pair\n• Weight: 68 g per pair",
+    "tags": [],
+    "stock": 55
+  },
+  {
+    "sku": "SOCKS-PATTERN",
+    "name": "Patterned Crew Socks",
+    "regular_price": "22.00",
+    "sale_price": "",
+    "image": "socks-pattern",
+    "categories": [
+      "Accessories",
+      "Socks"
+    ],
+    "short_description": "Crew socks in a woven pattern, with a dense cushion underfoot.",
+    "description": "Crew socks in a woven pattern, with a dense cushion underfoot.\n\n• Cotton / nylon blend\n• Dense underfoot cushion\n• Seamless toe\n• Sold as one pair\n• Weight: 78 g per pair",
+    "tags": [],
+    "stock": 44
+  },
+  {
+    "sku": "SOCKS-STRIPE",
+    "name": "Striped Crew Socks",
+    "regular_price": "22.00",
+    "sale_price": "",
+    "image": "socks-stripe",
+    "categories": [
+      "Accessories",
+      "Socks"
+    ],
+    "short_description": "Crew socks with a fine stripe, cushioned underfoot for long days.",
+    "description": "Crew socks with a fine stripe, cushioned underfoot for long days.\n\n• Merino blend, 200-needle\n• Extra heel and toe cushion\n• Seamless toe\n• Sold as one pair\n• Weight: 74 g per pair",
+    "tags": [
+      "New"
+    ],
+    "stock": 40
+  },
+  {
+    "sku": "CAP",
     "name": "Dawn Chorus Cap",
     "regular_price": "34.00",
     "sale_price": "",
@@ -370,354 +365,119 @@
       "Headwear"
     ],
     "short_description": "A soft, packable cap with a foldable brim.",
-    "description": "Folds into a pocket without creasing, with a soft brim you can bend to the light and a sweatband that actually absorbs.\n\n• Recycled polyester, 100 gsm\n• Foldable soft brim\n• Moisture-wicking sweatband\n• Adjustable rear strap\n• Weight: 62 g",
+    "description": "A soft, packable cap with a foldable brim.\n\n• Recycled polyester, 100 gsm\n• Foldable soft brim\n• Moisture-wicking sweatband\n• Adjustable rear strap\n• Weight: 62 g",
     "tags": [],
     "stock": 40
   },
   {
-    "sku": "DAWN-CHORUS-BEANIE",
-    "name": "Dawn Chorus Beanie",
-    "regular_price": "38.00",
-    "sale_price": "",
-    "image": "beanie",
-    "categories": [
-      "Accessories",
-      "Headwear"
-    ],
-    "short_description": "A merino beanie for cold starts and post-run warmth.",
-    "description": "Fine-gauge merino that fits under a hood and does not itch, with a folded band you can pull down over your ears.\n\n• 100% merino wool, fine gauge\n• Folded double-layer band\n• Fits under a hood\n• Weight: 68 g",
-    "tags": [
-      "New"
-    ],
-    "stock": 32
-  },
-  {
-    "sku": "HORIZON-GLASSES",
+    "sku": "GLASSES-AVIATOR",
     "name": "Horizon Glasses",
     "regular_price": "145.00",
     "sale_price": "",
-    "image": "sunglasses",
+    "image": "glasses-aviator",
     "categories": [
       "Accessories",
       "Eyewear"
     ],
-    "short_description": "Lightweight sunglasses with a smoke lens and grippy temples.",
-    "description": "A single-piece lens for a wide field of view and hydrophilic temples that hold on when you sweat.\n\n• Single-piece smoke lens, cat. 3\n• UV400 protection\n• Hydrophilic nose and temples\n• Weight: 26 g",
-    "tags": [],
-    "stock": 22
-  },
-  {
-    "sku": "HORIZON-PHOTOCHROMIC",
-    "name": "Horizon Photochromic",
-    "regular_price": "178.00",
-    "sale_price": "",
-    "image": "sunglasses-photo",
-    "categories": [
-      "Accessories",
-      "Eyewear"
-    ],
-    "short_description": "Horizon Glasses with a photochromic lens for dawn-to-dusk runs.",
-    "description": "The lens darkens in sun and clears in shade or under trees, so one pair covers a run that starts before light and ends in the open.\n\n• Photochromic lens, cat. 1-3\n• UV400 protection\n• Hydrophilic nose and temples\n• Weight: 28 g",
-    "tags": [],
-    "stock": 16
-  },
-  {
-    "sku": "MERINO-SOCK-2P",
-    "name": "Merino Trail Socks (2 pack)",
-    "regular_price": "26.00",
-    "sale_price": "",
-    "image": "socks",
-    "categories": [
-      "Accessories",
-      "Socks"
-    ],
-    "short_description": "Two pairs of merino cushioned trail socks.",
-    "description": "A cushioned heel and toe with a merino blend that manages sweat, in a two-pack so one pair is always dry.\n\n• Merino blend, 200-needle\n• Cushioned heel and toe\n• Seamless toe\n• Pack of two pairs\n• Weight: 68 g per pair",
-    "tags": [],
-    "stock": 55
-  },
-  {
-    "sku": "CUSHION-CREW-SOCKS",
-    "name": "Cushion Crew Socks",
-    "regular_price": "24.00",
-    "sale_price": "",
-    "image": "socks-charcoal",
-    "categories": [
-      "Accessories",
-      "Socks"
-    ],
-    "short_description": "Crew-height socks with a dense cushion for long days.",
-    "description": "Higher than the trail crew and denser underfoot, for runners who want more padding on hard ground.\n\n• Cotton / nylon blend, dense cushion\n• Crew height\n• Seamless toe\n• Pack of two pairs\n• Weight: 82 g per pair",
-    "tags": [
-      "New"
-    ],
-    "stock": 44
-  },
-  {
-    "sku": "SUMMIT-GLOVES",
-    "name": "Ridgeline Gloves",
-    "regular_price": "48.00",
-    "sale_price": "",
-    "image": "gloves",
-    "categories": [
-      "Accessories",
-      "Gloves"
-    ],
-    "short_description": "Lightweight gloves with touchscreen fingertips.",
-    "description": "Wind-resistant back and a grippy palm, thin enough to wear while you fiddle with a flask or a phone.\n\n• Wind-resistant softshell back\n• Silicone palm print\n• Touchscreen index and thumb\n• Weight: 52 g per pair",
-    "tags": [],
-    "stock": 30
-  },
-  {
-    "sku": "NIGHTFALL-GLOVES",
-    "name": "Nightfall Run Gloves",
-    "regular_price": "42.00",
-    "sale_price": "",
-    "image": "gloves-clay",
-    "categories": [
-      "Accessories",
-      "Gloves"
-    ],
-    "short_description": "Warmer gloves with a reflective print for night runs.",
-    "description": "A brushed inner face for cold mornings and a reflective print across the back of the hand so drivers see your hands move.\n\n• Brushed-back softshell\n• Reflective print on the back\n• Touchscreen index and thumb\n• Weight: 64 g per pair",
-    "tags": [
-      "New"
-    ],
-    "stock": 26
-  },
-  {
-    "sku": "GARMIN-FORERUNNER-165",
-    "name": "Garmin Forerunner 165",
-    "regular_price": "249.00",
-    "sale_price": "",
-    "image": "watch",
-    "categories": [
-      "Electronics",
-      "GPS Watches"
-    ],
-    "short_description": "A GPS running watch with a bright AMOLED display and multi-band positioning.",
-    "description": "Multi-band GPS for accurate tracks under tree cover, an AMOLED screen that stays readable in sun, and training metrics that load onto the watch.\n\n• 1.2 in AMOLED display\n• Multi-band GNSS\n• Wrist-based heart rate\n• Up to 11 days battery in smartwatch mode\n• Note: third-party brand — confirm resale authorisation before selling",
-    "tags": [],
-    "stock": 9
-  },
-  {
-    "sku": "DAWN-SPLIT-GPS",
-    "name": "Dawn Split GPS Watch",
-    "regular_price": "219.00",
-    "sale_price": "",
-    "image": "watch-sand",
-    "categories": [
-      "Electronics",
-      "GPS Watches"
-    ],
-    "short_description": "A lightweight GPS watch built for trail days.",
-    "description": "Big buttons you can hit with gloves, a barometric altimeter for climb totals, and a battery that lasts a long race.\n\n• 1.1 in transflective display\n• Barometric altimeter\n• Wrist-based heart rate\n• Up to 24 hours in GPS mode\n• Weight: 42 g",
-    "tags": [
-      "New"
-    ],
-    "stock": 12
-  },
-  {
-    "sku": "POLAR-H10-STRAP",
-    "name": "Polar H10 Heart Rate Strap",
-    "regular_price": "89.00",
-    "sale_price": "",
-    "image": "strap",
-    "categories": [
-      "Electronics",
-      "Heart Rate"
-    ],
-    "short_description": "A chest strap heart rate sensor with a soft textile band.",
-    "description": "Chest straps read heart rate more reliably than a wrist sensor when you are moving, and this one pairs over Bluetooth and ANT+.\n\n• Bluetooth and ANT+\n• Soft textile band, machine washable\n• User-replaceable battery\n• Note: third-party brand — confirm resale authorisation",
-    "tags": [],
-    "stock": 18
-  },
-  {
-    "sku": "CADENCE-HR-BELT",
-    "name": "Cadence HR Belt",
-    "regular_price": "69.00",
-    "sale_price": "",
-    "image": "strap-clay",
-    "categories": [
-      "Electronics",
-      "Heart Rate"
-    ],
-    "short_description": "Our own chest strap sensor, for pairing with any watch.",
-    "description": "The same reliable chest-strap readings as the Polar, in a lighter band with a slimmer pod.\n\n• Bluetooth and ANT+\n• Lightweight band, 38 g\n• User-replaceable battery\n• Water resistant to 3 ATM",
-    "tags": [
-      "New"
-    ],
-    "stock": 20
-  },
-  {
-    "sku": "NIGHT-RUNNER-HEADLAMP",
-    "name": "Night Runner 800",
-    "regular_price": "78.00",
-    "sale_price": "",
-    "image": "headlamp",
-    "categories": [
-      "Lighting",
-      "Headlamps"
-    ],
-    "short_description": "An 800-lumen headlamp with a wide beam for running.",
-    "description": "A wide, even beam so you see the trail edges, not just a bright spot, with a rear red light for road sections.\n\n• 800 lumens max\n• Wide running beam pattern\n• Rear red safety light\n• USB-C rechargeable, 40 h low\n• Weight: 118 g with battery",
+    "short_description": "Lightweight sunglasses with a dark lens and grippy temples.",
+    "description": "Lightweight sunglasses with a dark lens and grippy temples.\n\n• Smoke lens, cat. 3\n• UV400 protection\n• Hydrophilic nose and temples\n• Weight: 26 g",
     "tags": [],
     "stock": 24
   },
   {
-    "sku": "PETZL-ACTIK-CORE",
-    "name": "Petzl Actik Core Headlamp",
-    "regular_price": "88.00",
+    "sku": "GLASSES-WHITE",
+    "name": "Horizon Photochromic",
+    "regular_price": "178.00",
     "sale_price": "",
-    "image": "headlamp-forest",
+    "image": "glasses-white",
     "categories": [
-      "Lighting",
-      "Headlamps"
+      "Accessories",
+      "Eyewear"
     ],
-    "short_description": "A rechargeable 600-lumen headlamp with a hybrid power option.",
-    "description": "Runs on the supplied rechargeable core battery or three AAA cells, so you are never stuck without light on a trip.\n\n• 600 lumens max\n• Rechargeable core battery, or 3 x AAA\n• Red night-vision mode\n• Weight: 75 g with core battery\n• Note: third-party brand — confirm resale authorisation before selling",
+    "short_description": "Horizon Glasses in a light frame with a photochromic lens for dawn-to-dusk runs.",
+    "description": "Horizon Glasses in a light frame with a photochromic lens for dawn-to-dusk runs.\n\n• Photochromic lens, cat. 1-3\n• UV400 protection\n• Hydrophilic nose and temples\n• Weight: 28 g",
     "tags": [],
-    "stock": 16
+    "stock": 18
   },
   {
-    "sku": "DAWN-TRAIL-HEADLAMP",
-    "name": "Dawn Trail Headlamp",
-    "regular_price": "68.00",
+    "sku": "GLASSES-TORTOISE",
+    "name": "Horizon Tortoise",
+    "regular_price": "152.00",
     "sale_price": "",
-    "image": "headlamp-clay",
+    "image": "glasses-tortoise",
     "categories": [
-      "Lighting",
-      "Headlamps"
+      "Accessories",
+      "Eyewear"
     ],
-    "short_description": "A 500-lumen headlamp for dawn starts and camp.",
-    "description": "Lighter than the Night Runner with a narrower beam, for early starts where you mostly need to see the next few metres.\n\n• 500 lumens max\n• Spot and flood modes\n• USB-C rechargeable, 60 h low\n• Weight: 86 g with battery",
+    "short_description": "The Horizon frame in tortoise shell, with the same smoke lens.",
+    "description": "The Horizon frame in tortoise shell, with the same smoke lens.\n\n• Smoke lens, cat. 3\n• UV400 protection\n• Tortoise frame\n• Weight: 27 g",
+    "tags": [
+      "New"
+    ],
+    "stock": 20
+  },
+  {
+    "sku": "WATCH",
+    "name": "Dawn Field Watch",
+    "regular_price": "219.00",
+    "sale_price": "",
+    "image": "watch",
+    "categories": [
+      "Electronics",
+      "Watches"
+    ],
+    "short_description": "A field watch with a leather band and a readable dial, for days off the clock.",
+    "description": "A field watch with a leather band and a readable dial, for days off the clock.\n\n• Stainless case, 38 mm\n• Leather band, quick-release\n• Water resistant to 5 ATM\n• Japanese quartz movement\n• Weight: 58 g",
+    "tags": [],
+    "stock": 14
+  },
+  {
+    "sku": "TRACKER",
+    "name": "Cadence Fitness Tracker",
+    "regular_price": "89.00",
+    "sale_price": "",
+    "image": "tracker",
+    "categories": [
+      "Electronics",
+      "Fitness Trackers"
+    ],
+    "short_description": "A slim band tracker for daily steps, sleep and heart rate.",
+    "description": "A slim band tracker for daily steps, sleep and heart rate.\n\n• Slim band, adjustable strap\n• Heart rate and sleep tracking\n• Up to 10 days battery\n• Water resistant to 5 ATM\n• Weight: 24 g",
     "tags": [
       "New"
     ],
     "stock": 22
   },
   {
-    "sku": "NATHAN-HYPERNIGHT-VEST",
-    "name": "Nathan Hypernight Reflective Vest",
-    "regular_price": "35.00",
+    "sku": "SHOE-TRAIL",
+    "name": "Summit Trail Shoe",
+    "regular_price": "165.00",
     "sale_price": "",
-    "image": "reflective-vest",
+    "image": "shoe-trail",
     "categories": [
-      "Lighting",
-      "Safety & Reflective"
+      "Footwear",
+      "Trail Shoes"
     ],
-    "short_description": "A reflective vest for road running before light.",
-    "description": "Retroreflective panels front and back that light up in headlights, over a mesh body that does not add heat.\n\n• Retroreflective panels, front and back\n• Breathable mesh body\n• Adjustable side straps\n• Weight: 96 g\n• Note: third-party brand — confirm resale authorisation before selling",
+    "short_description": "A trail shoe with an aggressive lug pattern for loose ground.",
+    "description": "A trail shoe with an aggressive lug pattern for loose ground.\n\n• 4 mm lugs, sticky rubber\n• Rock plate underfoot\n• Reinforced toe cap\n• Weight: 298 g (size 42)",
     "tags": [],
-    "stock": 20
-  },
-  {
-    "sku": "DUSK-REFLECTIVE-VEST",
-    "name": "Dusk Reflective Vest",
-    "regular_price": "45.00",
-    "sale_price": "",
-    "image": "reflective-vest-clay",
-    "categories": [
-      "Lighting",
-      "Safety & Reflective"
-    ],
-    "short_description": "Our own reflective vest with a 360-degree stripe.",
-    "description": "A continuous reflective stripe around the body so you are visible from the side as well as from behind.\n\n• 360-degree reflective stripe\n• Breathable mesh body\n• Adjustable side straps\n• Weight: 88 g",
-    "tags": [
-      "New"
-    ],
     "stock": 18
   },
   {
-    "sku": "TRAIL-FUEL-BOX",
-    "name": "Trail Fuel Box (12 pack)",
-    "regular_price": "38.00",
+    "sku": "SHOE-ROAD",
+    "name": "Cadence Road Shoe",
+    "regular_price": "145.00",
     "sale_price": "",
-    "image": "gel-box",
+    "image": "shoe-road",
     "categories": [
-      "Nutrition",
-      "Energy Gels"
+      "Footwear",
+      "Road Shoes"
     ],
-    "short_description": "Twelve gels in a mixed box, for a full race or a big training block.",
-    "description": "A mix of caffeinated and plain gels so you can plan intake across a race, in a box that lives in your kit bag.\n\n• 12 gels, mixed flavours\n• 6 caffeinated, 6 plain\n• ~22 g carbohydrate per gel\n• Best before: see individual sachets",
-    "tags": [],
-    "stock": 36
-  },
-  {
-    "sku": "GU-ENERGY-GEL-8",
-    "name": "GU Original Energy Gel (box of 13)",
-    "regular_price": "13.00",
-    "sale_price": "",
-    "image": "gel-packet",
-    "categories": [
-      "Nutrition",
-      "Energy Gels"
-    ],
-    "short_description": "A box of 13 energy gel sachets.",
-    "description": "The classic gel format: a measured 100-calorie dose you can take without stopping, with a consistency that goes down easily at effort.\n\n• 13 sachets per box\n• ~100 kcal per sachet\n• Electrolyte blend\n• Note: third-party brand — confirm resale authorisation",
-    "tags": [],
-    "stock": 48
-  },
-  {
-    "sku": "NUUN-SPORT-TUBE",
-    "name": "Nuun Sport Electrolytes (10 tablets)",
-    "regular_price": "8.00",
-    "sale_price": "",
-    "image": "tube",
-    "categories": [
-      "Nutrition",
-      "Hydration & Electrolytes"
-    ],
-    "short_description": "A tube of 10 electrolyte tablets that dissolve in your flask.",
-    "description": "Drop one in 500 ml and it dissolves without fizzing over, replacing what you lose in sweat on a hot day.\n\n• 10 tablets per tube\n• Makes 5 L of drink\n• Low sugar\n• Note: third-party brand — confirm resale authorisation",
-    "tags": [],
-    "stock": 52
-  },
-  {
-    "sku": "TRAIL-SALT-TABLETS",
-    "name": "Trail Salt Tablets",
-    "regular_price": "16.00",
-    "sale_price": "",
-    "image": "tube-sand",
-    "categories": [
-      "Nutrition",
-      "Hydration & Electrolytes"
-    ],
-    "short_description": "Our own electrolyte tablets, sized for a long day out.",
-    "description": "A higher-sodium tablet for runners who cramp on long efforts, in a tube that fits a vest pocket.\n\n• 20 tablets per tube\n• Makes 10 L of drink\n• Higher sodium for long efforts\n• Caffeine-free",
+    "short_description": "A light road shoe for daily miles on tarmac.",
+    "description": "A light road shoe for daily miles on tarmac.\n\n• Compression-moulded midsole\n• Breathable knit upper\n• Weight: 245 g (size 42)",
     "tags": [
       "New"
     ],
-    "stock": 40
-  },
-  {
-    "sku": "RECOVERY-ROLLER",
-    "name": "Downhill Recovery Roller",
-    "regular_price": "55.00",
-    "sale_price": "",
-    "image": "roller",
-    "categories": [
-      "Recovery",
-      "Massage & Rollers"
-    ],
-    "short_description": "A hollow-core foam roller for post-run legs.",
-    "description": "A firm hollow core that holds its shape, with a textured surface that gets into the quads after a long descent.\n\n• Length: 33 cm\n• Hollow EVA core, firm density\n• Textured surface\n• Weight: 420 g",
-    "tags": [],
-    "stock": 26
-  },
-  {
-    "sku": "TRIGGERPOINT-MB1",
-    "name": "TriggerPoint MB1 Massage Ball",
-    "regular_price": "20.00",
-    "sale_price": "",
-    "image": "ball",
-    "categories": [
-      "Recovery",
-      "Massage & Rollers"
-    ],
-    "short_description": "A firm massage ball for feet, glutes and shoulders.",
-    "description": "Small enough to work into the arch of a foot or under a shoulder blade, and firm enough to actually release the tissue.\n\n• Diameter: 12.7 cm\n• Firm density\n• Weight: 340 g\n• Note: third-party brand — confirm resale authorisation",
-    "tags": [],
-    "stock": 30
+    "stock": 20
   }
 ]

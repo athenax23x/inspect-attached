@@ -2,13 +2,13 @@
 
 Owner-internal only. Do not display this file on the storefront.
 
-> **Perubahan November 2026 — foto produk tidak lagi memakai stok.**
-> Seluruh gambar produk sekarang dibuat sendiri (vektor, palet merek) dan
-> tersimpan di `wordpress-import/product-images/`. Setiap gambar hanya
-> menampilkan produknya, tanpa model atau latar pemandangan. Lihat
-> `wordpress-import/product-images/README.md` untuk alasan dan cara
-> membangunnya ulang. Foto stok di bawah ini masih dipakai untuk gambar
-> kategori dan hero, bukan untuk produk.
+> **Perubahan November 2026 — foto produk memakai foto asli dari Burst.**
+> Seluruh foto produk ada di `wordpress-import/product-images/photos/`, satu
+> foto asli per produk, hanya menampilkan produknya. Sumber dan lisensinya
+> dicatat di `wordpress-import/product-images/PHOTO-CREDITS.md`. Lihat
+> `wordpress-import/product-images/README.md` untuk cara memilih dan
+> menggantinya. Foto stok di bawah ini masih dipakai untuk gambar kategori dan
+> hero, bukan untuk produk.
 
 All photos in `/stock` are free-license images from Pixabay (Pixabay Content License
 — free for commercial use, no attribution required, resale as stock prohibited).

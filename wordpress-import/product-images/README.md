@@ -1,41 +1,43 @@
-# Gambar produk Dirt & Dawn
+# Foto produk Dirt & Dawn
 
-Setiap produk punya gambarnya sendiri di sini, dan **setiap gambar hanya
-menampilkan produknya** — tanpa model, tanpa latar pemandangan.
+`photos/` berisi satu foto asli untuk setiap produk, dan **setiap foto hanya
+menampilkan produknya** — tanpa model, tanpa ilustrasi.
 
-## Kenapa digambar sendiri, bukan foto stok
+Sumber: **Burst** (https://burst.shopify.com), perpustakaan foto gratis Shopify.
+Foto asli, boleh dipakai komersial, tanpa atribusi wajib. Judul asli, ID, dan
+tautan setiap foto dicatat di `PHOTO-CREDITS.md`.
 
-Untuk jenis barang di toko ini, bank foto gratis hampir selalu menampilkan model
-yang memakai barangnya atau pemandangan alam, bukan barangnya saja:
+## Cara memilih foto
 
-- Pixabay diblokir dari lingkungan kerja ini dan tetap butuh kunci API.
-- Pexels dan Unsplash bisa diakses, tetapi hasil untuk apparel/gear hampir
-  seluruhnya foto model ("woman in black sports bra and black shorts").
-- Wikimedia Commons memberi foto asli, tetapi hasil penelusurannya berupa foto
-  orang, gambar tidak relevan, dan kualitas rendah — tidak layak untuk toko.
-- Foto produk di latar putih yang benar-benar bersih (iStock, Pixta, Dreamstime,
-  Adobe Stock, FreePixel) semuanya berbayar atau memblokir akses.
+1. `scripts/source-burst-photos.py <istilah.json> <keluaran>` mencari dan
+   mengunduh calon dari Burst, menyaring judul yang menyebut orang/tangan/kaki.
+2. `scripts/make-contact-sheet.py` menyusun contact sheet untuk dinilai manual —
+   penyaringan otomatis saja tidak cukup, beberapa foto tetap menampilkan orang.
+3. `scripts/curate-product-photos.py` menyalin berkas terpilih dengan nama slug
+   produk dan menulis `PHOTO-CREDITS.md`.
+4. `scripts/build-product-catalog.py` menyusun `products-catalog.json`.
+5. `scripts/import-products-remote.sh` mengunggah dan memasang semuanya.
 
-Karena itu gambar dibuat sendiri dengan palet merek, sehingga seluruh grid
-konsisten dan setiap gambar bersih dari unsur lain. Ini juga menghapus seluruh
-ketergantungan lisensi pihak ketiga untuk foto produk.
+## Kenapa Burst
 
-## Cara membangun ulang
+Untuk jenis barang di toko ini, bank foto gratis lain hampir selalu menampilkan
+model atau pemandangan: Pixabay diblokir dari lingkungan kerja ini dan tetap
+butuh kunci API; Pexels dan Unsplash hasil untuk apparel/gear sebagian besar foto
+model; Wikimedia Commons kualitasnya tidak layak untuk toko. Foto produk di latar
+putih yang bersih dari iStock, Pixta, Dreamstime, Adobe Stock, dan FreePixel
+semuanya berbayar atau memblokir akses. Burst adalah satu-satunya sumber gratis
+yang memberi foto produk asli dalam jumlah cukup.
 
-```bash
-scripts/render-product-images.sh          # SVG -> PNG 700x700
-scripts/build-product-catalog.py          # katalog produk -> products-catalog.json
-scripts/import-products-remote.sh         # unggah + importer (butuh kredensial FTP)
-```
+## Batas yang perlu diketahui
 
-- `svg/` — sumber vektor, dibuat oleh `scripts/build-product-images.py`.
-- `png/` — hasil render 700×700, ini yang dipakai WordPress.
+Tidak semua jenis barang punya foto produk-saja yang gratis. Burst tidak
+menyediakan jaket, gilet, headlamp, tongkat trekking, atau beanie dalam bentuk
+foto produk. Karena itu katalog **disesuaikan dengan foto yang tersedia**: nama
+dan deskripsi setiap produk mengikuti barang yang benar-benar tampak di fotonya,
+dan produk tanpa foto yang cocok tidak dipakai. Katalog berisi 31 produk di
+kategori Apparel, Equipment, Accessories, Electronics, Recovery, dan Footwear.
 
-Menambah varian baru: tambahkan bentuk dan entri di `CATALOGUE` pada
-`scripts/build-product-images.py`, lalu rujuk slug-nya di katalog produk.
+## Mengganti dengan foto sendiri nanti
 
-## Mengganti dengan foto asli nanti
-
-Kalau nanti ada foto produk asli (dari pemasok atau hasil pemotretan sendiri),
-letakkan berkasnya di `png/` dengan nama slug yang sama, jalankan
-`scripts/import-products-remote.sh`, dan gambarnya langsung terpasang.
+Letakkan berkas baru di `photos/` dengan nama slug yang sama (mis. `tee-charcoal.jpg`),
+jalankan `scripts/import-products-remote.sh`, dan fotonya langsung terpasang.
