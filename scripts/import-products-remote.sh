@@ -16,7 +16,7 @@ FTP_TLS="${FTP_TLS:-yes}"
 FTP_ROOT="${FTP_ROOT:-}"
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 REMOTE_DIR="$ROOT_DIR/wordpress-import/remote"
-PNG_DIR="$ROOT_DIR/wordpress-import/product-images/png"
+PNG_DIR="$ROOT_DIR/wordpress-import/product-images/photos"
 CATALOG="$ROOT_DIR/wordpress-import/products-catalog.json"
 
 STAMP="$(date -u +%Y%m%d%H%M%S)-$$"
@@ -51,7 +51,7 @@ cd_into_root() {
   if [ -n "$FTP_ROOT" ]; then echo "cd '$FTP_ROOT'"; fi
 }
 
-echo ">> Unggah importer, katalog, dan $(ls "$PNG_DIR"/*.png | wc -l) gambar produk"
+echo ">> Unggah importer, katalog, dan $(ls "$PNG_DIR"/*.jpg | wc -l) foto produk"
 {
   cd_into_root
   echo "put '$REMOTE_DIR/wp-import-products.php' -o '$REMOTE_PHP'"

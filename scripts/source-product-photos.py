@@ -10,6 +10,7 @@ Pakai: source-product-photos.py <daftar-istilah.json> <direktori-keluaran>
 
 import json
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -18,13 +19,22 @@ API = "https://api.openverse.org/v1/images/"
 UA = "dirt-dawn-theme/1.0 (product image sourcing)"
 
 
-def search(term: str, limit: int = 8) -> list:
+def search(term: str, limit: int = 12) -> list:
     query = urllib.parse.urlencode(
         {"q": term, "license_type": "commercial", "page_size": limit, "mature": "false"}
     )
     request = urllib.request.Request(f"{API}?{query}", headers={"User-Agent": UA})
     with urllib.request.urlopen(request, timeout=40) as response:
-        return json.load(response).get("results", [])
+        results = json.load(response).get("results", [])
+    # Hanya foto: buang ilustrasi, gambar vektor, dan animasi.
+    keep = []
+    for item in results:
+        if item.get("category") not in (None, "photograph"):
+            continue
+        if (item.get("filetype") or "jpg") not in ("jpg", "jpeg", "png", "webp"):
+            continue
+        keep.append(item)
+    return keep
 
 
 def download(url: str, dest: Path) -> bool:
@@ -52,7 +62,12 @@ def main() -> int:
     index = {}
     for slug, term in terms.items():
         print(f"== {slug}: {term}")
-        results = search(term)
+        try:
+            results = search(term)
+        except Exception as exc:  # noqa: BLE001
+            print(f"   pencarian gagal: {exc}")
+            results = []
+            time.sleep(5)
         kept = []
         for i, item in enumerate(results):
             thumb = item.get("thumbnail") or item.get("url")
@@ -71,6 +86,7 @@ def main() -> int:
                 )
                 print(f"   ok {dest.name}  {(item.get('title') or '')[:50]}")
         index[slug] = kept
+        time.sleep(2)
 
     (out_dir / "index.json").write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"\nTotal calon: {sum(len(v) for v in index.values())} -> {out_dir}")

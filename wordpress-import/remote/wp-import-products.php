@@ -107,8 +107,17 @@ function dnd_ensure_categories( array $names ): array {
  * Salin gambar staging ke Media Library dan kembalikan ID lampirannya.
  */
 function dnd_attach_image( string $stage_dir, string $slug, string $title ): int {
-	$source = $stage_dir . '/' . $slug . '.png';
-	if ( ! file_exists( $source ) ) {
+	$source = '';
+	$mime   = 'image/png';
+	foreach ( array( 'jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg', 'png' => 'image/png', 'webp' => 'image/webp' ) as $ext => $type ) {
+		$candidate = $stage_dir . '/' . $slug . '.' . $ext;
+		if ( file_exists( $candidate ) ) {
+			$source = $candidate;
+			$mime   = $type;
+			break;
+		}
+	}
+	if ( '' === $source ) {
 		return 0;
 	}
 
@@ -117,7 +126,7 @@ function dnd_attach_image( string $stage_dir, string $slug, string $title ): int
 		return 0;
 	}
 
-	$filename = 'dirt-dawn-' . sanitize_file_name( $slug ) . '.png';
+	$filename = 'dirt-dawn-' . sanitize_file_name( $slug ) . '.' . pathinfo( $source, PATHINFO_EXTENSION );
 	$dest     = trailingslashit( $uploads['path'] ) . $filename;
 	if ( ! copy( $source, $dest ) ) {
 		return 0;
@@ -125,7 +134,7 @@ function dnd_attach_image( string $stage_dir, string $slug, string $title ): int
 
 	$id = wp_insert_attachment(
 		array(
-			'post_mime_type' => 'image/png',
+			'post_mime_type' => $mime,
 			'post_title'     => $title,
 			'post_status'    => 'inherit',
 		),
@@ -218,6 +227,29 @@ if ( $new_tag instanceof WP_Term ) {
 	}
 }
 
+// Produk lama yang tidak ada di katalog (mis. produk yang fotonya tidak lagi
+// cocok) dipindah ke draft, bukan dihapus, supaya bisa dikembalikan kapan saja.
+$retired = array();
+$catalog_skus = array_map(
+	static function ( array $item ): string {
+		return (string) $item['sku'];
+	},
+	$catalog
+);
+$existing_products = wc_get_products( array( 'limit' => -1, 'status' => array( 'publish', 'draft' ), 'return' => 'objects' ) );
+foreach ( $existing_products as $existing ) {
+	$existing_sku = $existing->get_sku();
+	if ( '' === $existing_sku || in_array( $existing_sku, $catalog_skus, true ) ) {
+		continue;
+	}
+	if ( 'draft' === $existing->get_status() ) {
+		continue;
+	}
+	$existing->set_status( 'draft' );
+	$existing->save();
+	$retired[] = $existing_sku;
+}
+
 $term_counts = get_terms(
 	array( 'taxonomy' => 'product_cat', 'hide_empty' => false, 'fields' => 'id=>count' )
 );
@@ -229,6 +261,7 @@ echo dnd_json(
 		'updated'       => count( $updated ),
 		'images_set'    => count( $images ),
 		'tagged_new'    => $tagged,
+		'retired'       => $retired,
 		'errors'        => $errors,
 		'product_total' => (int) wp_count_posts( 'product' )->publish,
 		'empty_cats'    => array_values(
