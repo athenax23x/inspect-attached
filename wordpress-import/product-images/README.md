@@ -1,7 +1,9 @@
 # Foto produk Dirt & Dawn
 
 `photos/` berisi satu foto asli untuk setiap produk, dan **setiap foto hanya
-menampilkan produknya** — tanpa model, tanpa ilustrasi.
+menampilkan produknya** — tanpa model, tanpa ilustrasi. Foto kategori di
+homepage ada di `wordpress-theme/dirt-dawn/assets/img/` dengan kredit di
+`CATEGORY-CREDITS.md`.
 
 Sumber: **Burst** (https://burst.shopify.com), perpustakaan foto gratis Shopify.
 Foto asli, boleh dipakai komersial, tanpa atribusi wajib. Judul asli, ID, dan

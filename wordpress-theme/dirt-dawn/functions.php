@@ -418,15 +418,16 @@ function dirt_dawn_category_image( WP_Term $term, string $size = 'woocommerce_th
 		}
 	}
 
+	// Foto kategori dari Burst (lihat assets/img/PHOTO-CREDITS.md). Setiap
+	// kategori induk memakai foto yang memang menampilkan barangnya.
 	$map = array(
-		'shoes'       => 'prod-shoe.jpg',
 		'apparel'     => 'cat-apparel.jpg',
 		'equipment'   => 'cat-equipment.jpg',
 		'electronics' => 'cat-electronics.jpg',
-		'lighting'    => 'prod-headlamp.jpg',
-		'nutrition'   => 'cat-nutrition.jpg',
 		'recovery'    => 'cat-recovery.jpg',
 		'accessories' => 'cat-accessories.jpg',
+		'footwear'    => 'cat-footwear.jpg',
+		'shoes'       => 'cat-footwear.jpg',
 	);
 	$file = $map[ $term->slug ] ?? '';
 	if ( '' !== $file && file_exists( get_theme_file_path( 'assets/img/' . $file ) ) ) {
